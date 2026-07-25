@@ -17,6 +17,9 @@ for human approval and makes zero external calls.
 - [x] Mandatory human approval.
 - [x] Persistent local approval queue.
 - [x] Batch command and approval HTTP inbox.
+- [x] Editable channel-specific review with independent Instagram, Facebook,
+  and Telegram decisions.
+- [x] Human revision feedback can regenerate into a new approval cycle.
 - [x] Shadow scheduler with a per-channel status.
 
 ## P1 — required before live publishing
@@ -46,4 +49,3 @@ for human approval and makes zero external calls.
 Live publishing cannot be completed autonomously without account-owner actions:
 Meta app/account permissions, Telegram bot administration, approved brand
 decisions, credentials, and explicit production authorization.
-

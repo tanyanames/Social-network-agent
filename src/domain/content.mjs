@@ -89,7 +89,15 @@ export function createContentItem({
     channelDrafts: null,
     critique: null,
     revisionCount: 0,
-    approval: null,
+    approval: {
+      decision: "pending",
+      channels: Object.fromEntries(
+        [...new Set(channels)].map((channel) => [
+          channel,
+          { decision: "pending", note: "", actor: null, decidedAt: null },
+        ]),
+      ),
+    },
     schedule: null,
     audit: [],
   };

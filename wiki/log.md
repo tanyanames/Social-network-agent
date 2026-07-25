@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-25] update | add editable per-channel approval workspace
+**Object**: ADAMA approval inbox and review state machine.
+**Scenario**: feature
+**Outcome**: ✅ success
+**What happened**: Rebuilt the local inbox as an editable Instagram/Facebook/Telegram review workspace. Each channel now has its own caption, CTA, design brief, note, and decision; editing resets only that channel, all selected channels must be approved before scheduling, and revision feedback can regenerate into a new review cycle. Desktop and 390px mobile layouts were visually verified, and eleven tests pass.
+**Code changes**: this commit — editable per-channel review workspace.
+**Updated**: `src/domain/content.mjs`, `src/workflow/adama-agent.mjs`, `src/server.mjs`, `test/`, `docs/implementation-backlog.md`, `docs/operator-runbook.md`, `wiki/concepts/multichannel-shadow-mode.md`, `wiki/log.md`, `graphify-out/`.
+
 ## [2026-07-25] update | make ADAMA shadow mode operational across channels
 **Object**: Multichannel content production and local operations.
 **Scenario**: feature

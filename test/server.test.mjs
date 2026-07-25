@@ -3,7 +3,7 @@ import test from "node:test";
 import { once } from "node:events";
 import { createApprovalServer } from "../src/server.mjs";
 
-test("approval inbox exposes a safe end-to-end mock flow", async (context) => {
+test("approval inbox exposes editable per-channel review", async (context) => {
   const server = createApprovalServer();
   server.listen(0, "127.0.0.1");
   await once(server, "listening");
@@ -26,6 +26,34 @@ test("approval inbox exposes a safe end-to-end mock flow", async (context) => {
 
   assert.equal(created.status, 201);
   assert.equal(item.state, "approval_pending");
-  assert.match(page, /Approve/);
-  assert.match(page, /Ничего не публикуется без ручного подтверждения/);
+  assert.match(page, /Approve channel/);
+  assert.match(
+    page,
+    /Ничего не публикуется без ручного подтверждения каждого канала/,
+  );
+
+  const editedResponse = await fetch(
+    `${baseUrl}/api/items/api-reel/channels/instagram/draft`,
+    {
+      method: "PATCH",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ caption: "Edited Instagram caption" }),
+    },
+  );
+  const edited = await editedResponse.json();
+  assert.equal(edited.channelDrafts.instagram.caption, "Edited Instagram caption");
+
+  for (const channel of ["instagram", "facebook", "telegram"]) {
+    const reviewed = await fetch(
+      `${baseUrl}/api/items/api-reel/channels/${channel}/approve`,
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ note: `${channel} checked` }),
+      },
+    );
+    assert.equal(reviewed.status, 200);
+  }
+  const approved = await (await fetch(`${baseUrl}/api/items`)).json();
+  assert.equal(approved[0].state, "approved");
 });

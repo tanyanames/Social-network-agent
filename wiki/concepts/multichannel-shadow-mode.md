@@ -13,8 +13,12 @@ Telegram:
 `plan → master draft → channel adaptations → critique → human approval →
 shadow schedule`
 
-Each item stores channel-specific captions, calls to action, asset plans, and
-design briefs. The durable local queue uses a JSON store under gitignored
+Each item stores editable channel-specific captions, calls to action, asset
+plans, design briefs, review notes, and decisions. Instagram, Facebook, and
+Telegram are reviewed independently; the package reaches `approved` only when
+every selected channel has a human approval. Editing resets that channel to
+pending, while any revision request returns the whole package to a regeneratable
+revision loop. The durable local queue uses a JSON store under gitignored
 `Context/runtime-state/`, so pending approvals survive server restarts.
 
 The mock publisher produces one `shadow_scheduled` record per selected channel
@@ -30,4 +34,3 @@ must resolve that conflict before automated templates become authoritative.
 See [the implementation backlog](../../docs/implementation-backlog.md),
 [design audit](../../docs/design-audit.md), and
 [operator runbook](../../docs/operator-runbook.md).
-

@@ -1,16 +1,16 @@
 # Graph Report - Social Network Agent  (2026-07-25)
 
 ## Corpus Check
-- 276 files · ~137,501 words
+- 276 files · ~138,757 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1507 nodes · 2822 edges · 158 communities (103 shown, 55 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.51)
+- 1513 nodes · 2835 edges · 156 communities (101 shown, 55 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 51 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b49b46d8`
+- Built from commit: `1e6ec45b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -147,7 +147,6 @@
 - ADAMA social media agent — project brief
 - ADAMA content corpus
 - ADAMA mock MVP
-- adama-agent.mjs
 - express-session
 
 ## God Nodes (most connected - your core abstractions)
@@ -163,29 +162,29 @@
 10. `RedditClient` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `generatePostsFromMessages()` --calls--> `shouldPostToLinkedInOrg()`  [EXTRACTED]
-  vendor/langchain-social-media-agent/src/agents/ingest-repurposed-data/index.ts → vendor/langchain-social-media-agent/src/agents/utils.ts
-- `extractContentsFunc()` --calls--> `isValidUrl()`  [EXTRACTED]
-  vendor/langchain-social-media-agent/src/agents/ingest-repurposed-data/nodes/extract.ts → vendor/langchain-social-media-agent/src/agents/utils.ts
 - `generatePostOrContinue()` --calls--> `useLangChainPrompts()`  [EXTRACTED]
   vendor/langchain-social-media-agent/src/agents/curate-data/index.ts → vendor/langchain-social-media-agent/src/agents/utils.ts
+- `extractContentsFunc()` --calls--> `isValidUrl()`  [EXTRACTED]
+  vendor/langchain-social-media-agent/src/agents/ingest-repurposed-data/nodes/extract.ts → vendor/langchain-social-media-agent/src/agents/utils.ts
+- `getScheduledPosts()` --calls--> `extractUrls()`  [EXTRACTED]
+  vendor/langchain-social-media-agent/scripts/get-all-used-links.ts → vendor/langchain-social-media-agent/src/agents/utils.ts
 - `langchainDependencyReposLoaderFunc()` --calls--> `getGitHubRepoURLs()`  [EXTRACTED]
   vendor/langchain-social-media-agent/src/agents/curate-data/loaders/github/langchain.ts → vendor/langchain-social-media-agent/src/agents/curate-data/utils/stores/github-repos.ts
-- `githubTrendingLoaderFunc()` --calls--> `getUniqueArrayItems()`  [EXTRACTED]
-  vendor/langchain-social-media-agent/src/agents/curate-data/loaders/github/trending.ts → vendor/langchain-social-media-agent/src/agents/curate-data/utils/get-unique-array.ts
+- `latentSpaceLoaderFunc()` --calls--> `getUniqueArrayItems()`  [EXTRACTED]
+  vendor/langchain-social-media-agent/src/agents/curate-data/loaders/latent-space.ts → vendor/langchain-social-media-agent/src/agents/curate-data/utils/get-unique-array.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (158 total, 55 thin omitted)
+## Communities (156 total, 55 thin omitted)
 
 ### Community 0 - "Universal Autonomous-Agent Operating Framework — **Claude edition**"
 Cohesion: 0.10
-Nodes (25): generateReportGraph, generateReportWorkflow, extractKeyDetails(), formatKeyDetailsPrompt(), formatReportPrompt(), generateReport(), parseGeneration(), GenerateReportAnnotation (+17 more)
+Nodes (27): TweetsGroupedByContent, generateReportGraph, generateReportWorkflow, extractKeyDetails(), formatKeyDetailsPrompt(), formatReportPrompt(), FormatReportPromptParams, generateReport() (+19 more)
 
 ### Community 1 - "Universal Autonomous-Agent Operating Framework — **Codex edition**"
-Cohesion: 0.13
-Nodes (8): fixtureTrendMap, MockAccountAnalyzer, MockContentGenerator, MockContentPlanner, MockCritic, MockPublisher, MockTrendResearcher, MemoryStore
+Cohesion: 0.11
+Nodes (13): { agent }, posts, { agent }, created, createApp(), createOperationalApp(), fixtureTrendMap, MockAccountAnalyzer (+5 more)
 
 ### Community 2 - "Universal Autonomous-Agent Operating Framework — **Claude edition**"
 Cohesion: 0.08
@@ -196,8 +195,8 @@ Cohesion: 0.08
 Nodes (23): 0. The one-paragraph thesis, 10. The operating loop (the three habits), 10b. Autonomy & decision posture (autopilot is the default), 11. Quality-gate loops (the 13 self-pacing loops), 12. Hooks — event-driven automation glue, 13. `/ship` — one button for the whole tail, 14. CI/CD & deployment (GitHub), 15. Versioning & git conventions (+15 more)
 
 ### Community 4 - "Execution plan (in order; stop and ask if anything is ambiguous)"
-Cohesion: 0.06
-Nodes (34): getScheduledRuns(), PendingRun, IngestDataConfigurableAnnotation, LangChainProduct, SimpleSlackMessageWithLinks, getChannelIdFromConfig(), ingestSlackData(), builder (+26 more)
+Cohesion: 0.12
+Nodes (11): getScheduledRuns(), PendingRun, GetChannelMessagesArgs, SlackClient, SlackClientArgs, SlackMessage, SlackMessageAttachment, SlackMessageFile (+3 more)
 
 ### Community 5 - "Execution plan (in order; stop and ask if anything is ambiguous)"
 Cohesion: 0.12
@@ -220,8 +219,8 @@ Cohesion: 0.05
 Nodes (41): author, description, license, main, name, packageManager, private, resolutions (+33 more)
 
 ### Community 11 - "Project Guardrails"
-Cohesion: 0.11
-Nodes (26): EXAMPLES, generateThreadGraph, generateThreadWorkflow, generateThreadPlan(), parseTotalPosts(), TODO: Make this pass to an LLM and have the LLM extract the number., generateThreadPosts(), constructDescription() (+18 more)
+Cohesion: 0.21
+Nodes (11): generateThreadGraph, generateThreadWorkflow, generateThreadPlan(), parseTotalPosts(), TODO: Make this pass to an LLM and have the LLM extract the number., rewriteThread(), schema, scheduleThread() (+3 more)
 
 ### Community 12 - "agent-env-setup — one-button new-environment install"
 Cohesion: 0.13
@@ -244,12 +243,12 @@ Cohesion: 0.07
 Nodes (11): FlairTemplate, ImagePreview, ImagePreviewSource, ListingOptions, Media, MediaEmbed, RedditContent, RichTextFlair (+3 more)
 
 ### Community 17 - "log.md"
-Cohesion: 0.25
-Nodes (7): [2026-07-25] ingest | ADAMA project brief and repository research, [2026-07-25] ingest | index local Downloads and work vaults, [2026-07-25] update | add content planning and shadow-mode gates, [2026-07-25] update | adopt universal agent framework, [2026-07-25] update | build ADAMA mock approval pipeline, [2026-07-25] update | make ADAMA shadow mode operational across channels, Wiki Log
+Cohesion: 0.22
+Nodes (8): [2026-07-25] ingest | ADAMA project brief and repository research, [2026-07-25] ingest | index local Downloads and work vaults, [2026-07-25] update | add content planning and shadow-mode gates, [2026-07-25] update | add editable per-channel approval workspace, [2026-07-25] update | adopt universal agent framework, [2026-07-25] update | build ADAMA mock approval pipeline, [2026-07-25] update | make ADAMA shadow mode operational across channels, Wiki Log
 
 ### Community 18 - "loop-changelog.md"
-Cohesion: 0.15
-Nodes (16): checkIsGitHubImageUrl(), findImages(), getUrlForScreenshot(), takeScreenshotAndUpload(), ALLOWED_DAYS, GITHUB_BROWSER_CONTEXT_OPTIONS, GITHUB_SCREENSHOT_OPTIONS, extractAllImageUrlsFromMarkdown() (+8 more)
+Cohesion: 0.13
+Nodes (15): checkIsGitHubImageUrl(), findImages(), getUrlForScreenshot(), takeScreenshotAndUpload(), ALLOWED_DAYS, GITHUB_BROWSER_CONTEXT_OPTIONS, GITHUB_SCREENSHOT_OPTIONS, getGitHubContentsAndTypeFromUrl() (+7 more)
 
 ### Community 19 - "loop-de-sloppify.md"
 Cohesion: 0.12
@@ -260,27 +259,27 @@ Cohesion: 0.15
 Nodes (15): aiNewsBlogLoader, RSSFeed, RSSItem, getOctokit(), getSinceDate(), langchainDependencyReposLoader, langchainDependencyReposLoaderFunc(), LIMITS (+7 more)
 
 ### Community 21 - "loop-docs-sync.md"
-Cohesion: 0.13
-Nodes (21): curatedPostInterruptGraph, workflow, CuratedPostInterruptAnnotation, CuratedPostInterruptConfigurableAnnotation, CuratedPostInterruptState, CuratedPostInterruptUpdate, TODO: Refactor the post/complexPost state interfaces to use a single shared inte, rewritePost() (+13 more)
+Cohesion: 0.12
+Nodes (22): curatedPostInterruptGraph, workflow, CuratedPostInterruptAnnotation, CuratedPostInterruptConfigurableAnnotation, CuratedPostInterruptState, CuratedPostInterruptUpdate, TODO: Refactor the post/complexPost state interfaces to use a single shared inte, rewritePost() (+14 more)
 
 ### Community 22 - "loop-e2e.md"
-Cohesion: 0.21
-Nodes (7): BLACKLISTED_GENERAL_URLS, BLACKLISTED_IMAGE_URL_ENDINGS, BLACKLISTED_IMAGE_URLS, filterUnwantedImageUrls(), isUpdatedSupabaseUrl(), RetryWithTimeoutOptions, UrlType
+Cohesion: 0.15
+Nodes (10): BLACKLISTED_GENERAL_URLS, BLACKLISTED_IMAGE_URL_ENDINGS, BLACKLISTED_IMAGE_URLS, extractMimeTypeFromBase64(), filterUnwantedImageUrls(), isUpdatedSupabaseUrl(), RetryWithTimeoutOptions, UrlType (+2 more)
 
 ### Community 23 - "loop-guardrails.md"
 Cohesion: 0.08
 Nodes (23): RUN npx -y playwright@1.61.1 install --with-deps, dependencies, dockerfile_lines, env, graphs, curate_data, curated_post_interrupt, generate_post (+15 more)
 
 ### Community 24 - "loop-investigate.md"
-Cohesion: 0.13
-Nodes (17): condenseOrHumanConditionalEdge(), generatePostBuilder, routeToCuratedInterruptOrContinue(), BASE_GENERATE_POST_CONFIG, GeneratePostAnnotation, GeneratePostConfigurableAnnotation, GeneratePostState, GeneratePostUpdate (+9 more)
+Cohesion: 0.05
+Nodes (53): ALLOWED_TIMES, checkIfUrlsArePreviouslyUsed(), condenseOrHumanConditionalEdge(), generatePostBuilder, generatePostGraph, generateReportOrEndConditionalEdge(), routeToCuratedInterruptOrContinue(), BASE_GENERATE_POST_CONFIG (+45 more)
 
 ### Community 25 - "loop-lint.md"
-Cohesion: 0.09
-Nodes (36): repurposerBuilder, repurposerGraph, generateCampaignPlan(), formatUserPrompt(), generatePosts(), startInterruptGraphRuns(), repurposerPostInterruptGraph, workflow (+28 more)
+Cohesion: 0.16
+Nodes (18): repurposerPostInterruptGraph, workflow, humanNode(), routeResponse(), routeResponseSchema, constructDescription(), formatImageDescriptions(), getUnknownResponseDescription() (+10 more)
 
 ### Community 26 - "loop-migrate.md"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (12): ensureSignature(), getMediaFromImage(), postUploadFailureToSlack(), TODO: Refactor the post/complexPost state interfaces to use a single shared inte, reshareFromMainLinkedInAccount(), retweetFromMainAccount(), uploadPost(), UploadPostAnnotation (+4 more)
 
 ### Community 27 - "loop-pr-babysitter.md"
@@ -296,92 +295,92 @@ Cohesion: 0.40
 Nodes (4): ADAMA shadow-mode runbook, Daily workflow, Exit criteria, Hard boundary
 
 ### Community 30 - "loop-visual-regression.md"
-Cohesion: 0.11
-Nodes (28): curateDataGraph, curateDataWorkflow, formatData(), getTweetGroupEngagement(), groupTweetsByContent(), parseGeneration(), formatGroupsPrompt(), formatTweetsInGroup() (+20 more)
+Cohesion: 0.10
+Nodes (28): curateDataGraph, curateDataWorkflow, generatePostOrContinue(), formatData(), getTweetGroupEngagement(), groupTweetsByContent(), parseGeneration(), formatGroupsPrompt() (+20 more)
 
 ### Community 31 - "Repository selection for the ADAMA social media agent"
-Cohesion: 0.32
-Nodes (13): getGeneralContent(), getTwitterContent(), getUrlContents(), getYouTubeContent(), extractContent(), extractTweetId(), getTweetContent(), getTwitterClient() (+5 more)
+Cohesion: 0.20
+Nodes (21): checkRedditURLExists(), checkTwitterURLExists(), extractAINewsletterContent(), getGeneralContent(), getTwitterContent(), getUrlContents(), getYouTubeContent(), shouldExcludeTweetContent() (+13 more)
 
 ### Community 32 - "repurposer/index.ts"
-Cohesion: 0.18
-Nodes (14): getInterrupts(), redoInterrupts(), updateImageUrls(), embedImageInTemplate(), uploadImageBufferToSupabase(), GENERATE_IMAGE_PROMPT_TEMPLATE, generateImageCandidatesForPost(), generateImageWithNanoBananaPro() (+6 more)
+Cohesion: 0.19
+Nodes (13): getInterrupts(), redoInterrupts(), updateImageUrls(), embedImageInTemplate(), uploadImageBufferToSupabase(), GENERATE_IMAGE_PROMPT_TEMPLATE, generateImageCandidatesForPost(), generateImageWithNanoBananaPro() (+5 more)
 
 ### Community 33 - "verify-links-graph.ts"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (13): getUrlContents, getUrlContentsFunc(), RELEVANCY_SCHEMA, UrlContents, verifyGeneralContent(), getUrlContents, getUrlContentsFunc(), RELEVANCY_SCHEMA (+5 more)
 
 ### Community 34 - "extract-ai-newsletter-content.ts"
-Cohesion: 0.12
-Nodes (19): getAllUsedLinks(), getCurrentInterrupts(), getScheduledPosts(), checkRedditURLExists(), checkTwitterURLExists(), extractAINewsletterContent(), extractUrls(), getExternalUrls() (+11 more)
+Cohesion: 0.17
+Nodes (11): getPost(), FormattedRedditPost, RedditPostChildren, RedditPostData, RedditPostData2, RedditPostGildings, RedditPostMediaEmbed, RedditPostRoot (+3 more)
 
 ### Community 35 - "reddit/types.ts"
-Cohesion: 0.18
-Nodes (12): TODO: Type casting as any here shouldn't be required..., RELEVANCY_SCHEMA, verifyContentIsRelevant, RELEVANCY_SCHEMA, VerifyYouTubeContentReturn, VerifyContentAnnotation, constructContext(), RELEVANCY_SCHEMA (+4 more)
+Cohesion: 0.33
+Nodes (6): constructContext(), RELEVANCY_SCHEMA, validateTweetContent(), verifyTweetBuilder, VerifyTweetAnnotation, VerifyTweetConfigurableAnnotation
 
 ### Community 36 - "graph.py"
 Cohesion: 0.17
 Nodes (14): Any, BaseStore, @langchain/anthropic, aget_reflections(), aput_reflections(), The reflection graph., Get reflections from the store., Put reflections in the store. (+6 more)
 
 ### Community 37 - "find-and-generate-images-graph.ts"
-Cohesion: 0.24
-Nodes (7): fetchListTweetsWrapper(), twitterLoader, twitterLoaderFunc(), twitterLoaderWithLangChainFunc(), createdAtAfter(), getLastIngestedTweetId(), putLastIngestedTweetId()
+Cohesion: 0.14
+Nodes (17): builder, generatePostsFromMessages(), graph, extract(), extractContents, extractContentsFunc(), extractionSchema, TODO: Update Slack message handler to include fileIds (+9 more)
 
 ### Community 38 - "ingest-data-graph.ts"
-Cohesion: 0.22
-Nodes (10): generatePostOrContinue(), getPrompts(), NOTE: you should likely not have this set, unless you want to use the LangChain, TWEET_EXAMPLES, LANGCHAIN_DOMAINS, shouldExcludeGeneralContent(), shouldExcludeGitHubContent(), shouldExcludeTweetContent() (+2 more)
+Cohesion: 0.25
+Nodes (8): getPrompts(), NOTE: you should likely not have this set, unless you want to use the LangChain, TWEET_EXAMPLES, LANGCHAIN_DOMAINS, shouldExcludeGeneralContent(), shouldExcludeGitHubContent(), shouldExcludeYouTubeContent(), useLangChainPrompts()
 
 ### Community 39 - "verify-general.ts"
-Cohesion: 0.18
-Nodes (16): authSocialsPassthrough(), builder, generatePostFromMessages(), graph, IngestDataAnnotation, ingestTweets(), TweetResult, getArcadeLinkedInAuthOrInterrupt() (+8 more)
+Cohesion: 0.16
+Nodes (15): builder, generatePostFromMessages(), graph, IngestDataAnnotation, IngestDataConfigurableAnnotation, LangChainProduct, SimpleSlackMessageWithLinks, getChannelIdFromConfig() (+7 more)
 
 ### Community 40 - "ingest-data.ts"
-Cohesion: 0.19
-Nodes (13): latentSpaceLoader, latentSpaceLoaderFunc(), filterRedditPosts(), getLangChainRedditPostsFunc(), getRedditPosts, getRedditPostsFunc(), getUniqueArrayItems(), getLatentSpaceLinks() (+5 more)
+Cohesion: 0.50
+Nodes (5): latentSpaceLoader, latentSpaceLoaderFunc(), getLatentSpaceLinks(), NAMESPACE, putLatentSpaceLinks()
 
 ### Community 41 - "content.mjs"
-Cohesion: 0.46
-Nodes (6): startGenerateReportRuns(), formatUserPrompt(), RELEVANCY_SCHEMA, validateRedditPost(), convertPostToString(), formatComments()
+Cohesion: 0.42
+Nodes (7): startGenerateReportRuns(), skipContentRelevancyCheck, formatUserPrompt(), RELEVANCY_SCHEMA, validateRedditPost(), convertPostToString(), formatComments()
 
 ### Community 42 - "video-summary.ts"
-Cohesion: 0.21
-Nodes (12): verifyYouTubeContent(), verifyLinksWorkflow, sharedLinksReducer(), VerifyLinksGraphAnnotation, VerifyLinksGraphConfigurableAnnotation, VerifyLinksGraphSharedAnnotation, VerifyLinksResultAnnotation, verifyRedditPostBuilder (+4 more)
+Cohesion: 0.22
+Nodes (11): verifyLinksWorkflow, sharedLinksReducer(), VerifyLinksGraphAnnotation, VerifyLinksGraphConfigurableAnnotation, VerifyLinksGraphSharedAnnotation, VerifyLinksResultAnnotation, verifyRedditPostBuilder, verifyRedditPostGraph (+3 more)
 
 ### Community 43 - "prompts/index.ts"
-Cohesion: 0.31
-Nodes (11): getChannelInfo(), getVideoID(), getVideoThumbnailUrl(), getYouTubeClientFromUrl(), getYouTubeVideoDuration(), parseDuration(), TODO: Handle this better, generateVideoSummary() (+3 more)
+Cohesion: 0.22
+Nodes (14): RELEVANCY_SCHEMA, verifyYouTubeContent(), VerifyYouTubeContentReturn, getChannelInfo(), getVideoID(), getVideoThumbnailUrl(), getYouTubeClientFromUrl(), getYouTubeVideoDuration() (+6 more)
 
 ### Community 44 - "validate-bulk-tweets.ts"
-Cohesion: 0.13
-Nodes (7): extractMimeTypeFromBase64(), BASE_FETCH_TWEET_OPTIONS, MediaIdStringArray, TwitterClient, CreateMediaRequest, CreateTweetRequest, TwitterClientArgs
+Cohesion: 0.12
+Nodes (10): fetchListTweetsWrapper(), twitterLoader, twitterLoaderFunc(), twitterLoaderWithLangChainFunc(), createdAtAfter(), getLastIngestedTweetId(), putLastIngestedTweetId(), useTwitterApiOnly() (+2 more)
 
 ### Community 45 - "express"
 Cohesion: 0.12
-Nodes (17): date-fns, express, @google/genai, @langchain/core, @langchain/langgraph-sdk, @mendable/firecrawl-js, @octokit/rest, passport (+9 more)
+Nodes (17): @arcadeai/arcadejs, express, @google/genai, @langchain/core, @langchain/langgraph-sdk, @mendable/firecrawl-js, @octokit/rest, passport (+9 more)
 
 ### Community 46 - "SocialAuthServer"
 Cohesion: 0.21
 Nodes (5): express-session, main(), SessionData, SocialAuthServer, TwitterUser
 
 ### Community 47 - "adama-profile.mjs"
-Cohesion: 0.26
-Nodes (12): githubTrendingLoaderFunc(), generatePostsSubgraph(), getAfterSeconds(), saveIngestedData(), sendSlackNotification(), getGitHubRepoURLs(), NAMESPACE, putGitHubRepoURLs() (+4 more)
+Cohesion: 0.17
+Nodes (19): githubTrendingLoaderFunc(), filterRedditPosts(), getLangChainRedditPostsFunc(), getRedditPostsFunc(), generatePostsSubgraph(), getAfterSeconds(), saveIngestedData(), sendSlackNotification() (+11 more)
 
 ### Community 48 - "generate-thread-posts.ts"
-Cohesion: 0.20
-Nodes (10): { agent }, posts, { agent }, created, createApp(), createOperationalApp(), body(), createApprovalServer() (+2 more)
+Cohesion: 0.44
+Nodes (7): body(), channelPanel(), createApprovalServer(), escapeHtml(), itemCard(), page(), send()
 
 ### Community 49 - "verify-github.ts"
-Cohesion: 0.27
-Nodes (12): fetchStargazersCount(), verifyGitHubWrapper(), getDependencies(), getGitHubContentsAndTypeFromUrl(), getOctokit(), RELEVANCY_SCHEMA, verifyGitHubContent(), verifyGitHubContentIsRelevant() (+4 more)
+Cohesion: 0.20
+Nodes (13): fetchStargazersCount(), verifyGitHubWrapper(), TODO: Type casting as any here shouldn't be required..., RELEVANCY_SCHEMA, verifyContentIsRelevant, getDependencies(), getOctokit(), RELEVANCY_SCHEMA (+5 more)
 
 ### Community 50 - "package.json"
 Cohesion: 0.15
 Nodes (12): engines, node, name, private, scripts, batch, check, demo (+4 more)
 
 ### Community 52 - "reflections.ts"
-Cohesion: 0.17
-Nodes (15): ALLOWED_TIMES, condensePost(), generatePost(), formatPrompt(), parseGeneration(), reflection(), ReflectionAnnotation, reflectionGraph (+7 more)
+Cohesion: 0.20
+Nodes (14): repurposerBuilder, repurposerGraph, extractContent(), generateCampaignPlan(), formatUserPrompt(), generatePosts(), startInterruptGraphRuns(), Image (+6 more)
 
 ### Community 53 - "Detailed Feature List"
 Cohesion: 0.18
@@ -392,24 +391,28 @@ Cohesion: 0.31
 Nodes (6): verifyTweetGraph, GITHUB_MESSAGE, GITHUB_URL_STATE, TWITTER_NESTED_GENERAL_MESSAGE, TWITTER_NESTED_GITHUB_MESSAGE, TWITTER_NESTED_YOUTUBE_MESSAGE
 
 ### Community 55 - "skipUsedUrlsCheck"
-Cohesion: 0.31
-Nodes (8): assertChannels(), CHANNEL_CAPABILITIES, SOCIAL_CHANNELS, assertFormat(), CONTENT_FORMATS, CONTENT_STATES, createContentItem(), transitions
+Cohesion: 0.26
+Nodes (9): ADAMA_BRAND_PROFILE, assertChannels(), CHANNEL_CAPABILITIES, SOCIAL_CHANNELS, assertFormat(), CONTENT_FORMATS, CONTENT_STATES, createContentItem() (+1 more)
 
 ### Community 56 - "generatePostGraph"
-Cohesion: 0.19
-Nodes (12): generatePostGraph, evaluatePost(), runEval(), runGraph(), evaluatePost(), TODO: Implement evaluation logic, runEval(), runGraph() (+4 more)
+Cohesion: 0.42
+Nodes (7): authSocialsPassthrough(), getArcadeLinkedInAuthOrInterrupt(), getBasicLinkedInAuthOrInterrupt(), getLinkedInAuthOrInterrupt(), getBasicTwitterAuthOrInterrupt(), getTwitterAuthOrInterrupt(), useArcadeAuth()
 
 ### Community 57 - "human-node.ts"
-Cohesion: 0.21
-Nodes (13): checkIfUrlsArePreviouslyUsed(), generateReportOrEndConditionalEdge(), constructDescription(), ConstructDescriptionArgs, getUnknownResponseDescription(), humanNode(), TODO: Update so if the mime type is blacklisted, it re-routes to human node with, routeResponse() (+5 more)
+Cohesion: 0.18
+Nodes (17): constructDescription(), ConstructDescriptionArgs, extractThreadPostsFromArgs(), getUnknownResponseDescription(), humanNode(), TODO: Handle invalid dates better, TODO: Update so if the mime type is blacklisted, it re-routes to human node with, ThreadPost (+9 more)
+
+### Community 58 - "dependencies"
+Cohesion: 0.42
+Nodes (7): EXAMPLES, generateThreadPosts(), formatAllPostsForPrompt(), formatBodyPostsForPrompt(), formatReportsForPrompt(), formatTweetExamplesForPrompt(), parseTweetGeneration()
 
 ### Community 59 - "index-local-vault.py"
 Cohesion: 0.53
 Nodes (5): Path, extract(), main(), normalize(), Build a local, derived text/metadata index for ADAMA source vaults.  The source
 
 ### Community 60 - "re-group-tweets.ts"
-Cohesion: 0.29
-Nodes (8): FindAndGenerateImagesAnnotation, findAndGenerateImagesGraph, findAndGenerateImagesWorkflow, filterImageUrls(), getProtectedUrls(), parseResult(), removeProtectedUrls(), validateImages()
+Cohesion: 0.13
+Nodes (26): answerSchema, formatTweets(), validateBulkTweets(), FindAndGenerateImagesAnnotation, findAndGenerateImagesGraph, findAndGenerateImagesWorkflow, parseResult(), reRankImages() (+18 more)
 
 ### Community 61 - "LangGraph Application Integration with Slack"
 Cohesion: 0.25
@@ -424,12 +427,8 @@ Cohesion: 0.29
 Nodes (7): cross-env, eslint, @types/node, devDependencies, cross-env, eslint, @types/node
 
 ### Community 64 - "reflect-tweet-groups.ts"
-Cohesion: 0.35
-Nodes (9): extractIndicesFromText, filterImageUrls(), getProtectedUrls(), parseResult(), removeProtectedUrls(), validateImages(), imageUrlToBuffer(), isValidUrl() (+1 more)
-
-### Community 65 - "general/index.ts"
-Cohesion: 0.60
-Nodes (4): evaluatePost(), TODO: Implement evaluation logic, runEval(), runGraph()
+Cohesion: 0.39
+Nodes (6): scheduleDateSchema, updateScheduledDate(), isValidDateString(), parseDateResponse(), PRIORITY_LEVELS, timezoneToUtc()
 
 ### Community 66 - "memory-v2/langgraph.json"
 Cohesion: 0.33
@@ -452,8 +451,8 @@ Cohesion: 0.50
 Nodes (3): INPUTS, OUTPUTS, TEST_EACH_INPUTS_OUTPUTS
 
 ### Community 74 - "date-fns"
-Cohesion: 0.54
-Nodes (6): parseResult(), reRankImages(), BLACKLISTED_MIME_TYPES, getMimeTypeFromUrl(), removeQueryParams(), getImageMessageContents()
+Cohesion: 0.83
+Nodes (3): getAllUsedLinks(), getCurrentInterrupts(), getScheduledPosts()
 
 ### Community 84 - "Repository selection for the ADAMA social media agent"
 Cohesion: 0.25
@@ -470,10 +469,6 @@ Nodes (6): ADAMA implementation backlog, External blockers, P0 — usable now, P
 ### Community 95 - "Local vault import — Downloads and work"
 Cohesion: 0.33
 Nodes (6): Evidence-backed thematic clusters, Guardrails, Indexing result, Local vault import — Downloads and work, Scope, Technical artifacts
-
-### Community 97 - "chunkArray"
-Cohesion: 0.60
-Nodes (4): answerSchema, formatTweets(), validateBulkTweets(), chunkArray()
 
 ### Community 98 - "Reusable parts"
 Cohesion: 0.40
@@ -496,24 +491,24 @@ Cohesion: 0.50
 Nodes (4): ADAMA mock MVP, Implemented flow, Safety invariant, Verification
 
 ## Knowledge Gaps
-- **488 isolated node(s):** `attachmentFolderPath`, `newLinkFormat`, `useMarkdownLinks`, `alwaysUpdateLinks`, `node_modules` (+483 more)
+- **489 isolated node(s):** `attachmentFolderPath`, `newLinkFormat`, `useMarkdownLinks`, `alwaysUpdateLinks`, `node_modules` (+484 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **55 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `dependencies` connect `express` to `HANDOVER — universal autonomous-agent framework (Codex, portable)`, `loop-de-sloppify.md`, `express-session`, `graph.py`, `dependencies`, `google-auth-library`, `cheerio`, `date-fns-tz`, `@langchain/langgraph`, `express-session`, `file-type`, `@googleapis/youtube`, `@langchain/community`, `@langchain/google-vertexai-web`, `@langchain/openai`, `langsmith`, `moment`, `passport-twitter`, `playwright`, `sharp`, `@slack/web-api`, `snoowrap`, `@supabase/supabase-js`, `@types/snoowrap`, `xml2js`, `zod`?**
+- **Why does `dependencies` connect `express` to `HANDOVER — universal autonomous-agent framework (Codex, portable)`, `loop-de-sloppify.md`, `express-session`, `graph.py`, `google-auth-library`, `cheerio`, `date-fns-tz`, `@langchain/langgraph`, `express-session`, `file-type`, `@googleapis/youtube`, `@langchain/community`, `@langchain/google-vertexai-web`, `@langchain/openai`, `langsmith`, `moment`, `chunkArray`, `passport-twitter`, `playwright`, `sharp`, `@slack/web-api`, `snoowrap`, `@supabase/supabase-js`, `@types/snoowrap`, `xml2js`, `zod`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Why does `TwitterClient` connect `validate-bulk-tweets.ts` to `extract-ai-newsletter-content.ts`, `loop-migrate.md`, `find-and-generate-images-graph.ts`, `verify-general.ts`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `SlackClient` connect `Execution plan (in order; stop and ask if anything is ambiguous)` to `Universal Autonomous-Agent Operating Framework — **Claude edition**`, `agent-env-setup — one-button new-environment install`, `adama-profile.mjs`, `loop-docs-sync.md`, `loop-migrate.md`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `TwitterClient` connect `validate-bulk-tweets.ts` to `loop-docs-sync.md`, `loop-e2e.md`, `generatePostGraph`, `loop-migrate.md`, `Repository selection for the ADAMA social media agent`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `SlackClient` connect `Execution plan (in order; stop and ask if anything is ambiguous)` to `Universal Autonomous-Agent Operating Framework — **Claude edition**`, `find-and-generate-images-graph.ts`, `verify-general.ts`, `agent-env-setup — one-button new-environment install`, `adama-profile.mjs`, `loop-docs-sync.md`, `loop-migrate.md`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `attachmentFolderPath`, `newLinkFormat`, `useMarkdownLinks` to the rest of the system?**
-  _488 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _489 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Universal Autonomous-Agent Operating Framework — **Claude edition**` be split into smaller, more focused modules?**
-  _Cohesion score 0.10099573257467995 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09743589743589744 - nodes in this community are weakly interconnected._
 - **Should `Universal Autonomous-Agent Operating Framework — **Codex edition**` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Universal Autonomous-Agent Operating Framework — **Claude edition**` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._

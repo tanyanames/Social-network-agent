@@ -82,6 +82,75 @@ test("human approval unlocks the mock publishing queue", async () => {
   );
 });
 
+test("all selected channels require human approval", async () => {
+  const { agent } = createApp();
+  agent.createIdea({
+    id: "channel-review",
+    format: "carousel",
+    topic: "community events",
+    objective: "Invite people",
+  });
+  await agent.runToApproval("channel-review");
+
+  const instagram = agent.reviewChannel(
+    "channel-review",
+    "instagram",
+    "approved",
+    "Instagram checked",
+  );
+  assert.equal(instagram.state, "approval_pending");
+  assert.equal(instagram.approval.channels.instagram.decision, "approved");
+
+  agent.reviewChannel("channel-review", "facebook", "approved", "Facebook checked");
+  const telegram = agent.reviewChannel(
+    "channel-review",
+    "telegram",
+    "approved",
+    "Telegram checked",
+  );
+  assert.equal(telegram.state, "approved");
+});
+
+test("editing a channel draft resets its review", async () => {
+  const { agent } = createApp();
+  agent.createIdea({
+    id: "edit-review",
+    format: "reel",
+    topic: "Hebrew and Israeli slang",
+    objective: "Teach a phrase",
+  });
+  await agent.runToApproval("edit-review");
+  agent.reviewChannel("edit-review", "instagram", "approved", "Looks good");
+  const edited = agent.updateChannelDraft("edit-review", "instagram", {
+    caption: "Новая версия подписи ADAMA",
+  });
+
+  assert.equal(edited.channelDrafts.instagram.caption, "Новая версия подписи ADAMA");
+  assert.equal(edited.approval.channels.instagram.decision, "pending");
+});
+
+test("requested revision can regenerate back to approval", async () => {
+  const { agent } = createApp();
+  agent.createIdea({
+    id: "revision-loop",
+    format: "reel",
+    topic: "new immigrant memes",
+    objective: "Build belonging",
+  });
+  await agent.runToApproval("revision-loop");
+  const returned = agent.reviewChannel(
+    "revision-loop",
+    "telegram",
+    "revision_requested",
+    "Shorten the opening",
+  );
+  assert.equal(returned.state, "revision_needed");
+
+  const regenerated = await agent.runToApproval("revision-loop");
+  assert.equal(regenerated.state, "approval_pending");
+  assert.equal(regenerated.revisionCount, 1);
+});
+
 test("rejects unsupported social channels", () => {
   const { agent } = createApp();
   assert.throws(() => agent.createIdea({

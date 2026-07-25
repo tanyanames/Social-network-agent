@@ -274,8 +274,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_demo",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "demo.mjs"
     },
     {
@@ -285,8 +285,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "scripts_demo_agent",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "{ agent }"
     },
     {
@@ -296,8 +296,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "scripts_demo_posts",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "posts"
     },
     {
@@ -307,8 +307,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_generate_batch",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "generate-batch.mjs"
     },
     {
@@ -318,8 +318,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "scripts_generate_batch_agent",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "{ agent }"
     },
     {
@@ -329,8 +329,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "scripts_generate_batch_created",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "created"
     },
     {
@@ -417,8 +417,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_app_createapp",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "createapp()"
     },
     {
@@ -428,8 +428,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_app_createoperationalapp",
-      "community": 48,
-      "community_name": "generate-thread-posts.ts",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "createoperationalapp()"
     },
     {
@@ -439,8 +439,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_brand_adama_profile",
-      "community": 155,
-      "community_name": "adama-agent.mjs",
+      "community": 55,
+      "community_name": "skipUsedUrlsCheck",
       "norm_label": "adama-profile.mjs"
     },
     {
@@ -450,8 +450,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_brand_adama_profile_adama_brand_profile",
-      "community": 155,
-      "community_name": "adama-agent.mjs",
+      "community": 55,
+      "community_name": "skipUsedUrlsCheck",
       "norm_label": "adama_brand_profile"
     },
     {
@@ -774,10 +774,43 @@
       "norm_label": "body()"
     },
     {
-      "label": "page()",
+      "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "src/server.mjs",
       "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_server_escapehtml",
+      "community": 48,
+      "community_name": "generate-thread-posts.ts",
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "channelPanel()",
+      "file_type": "code",
+      "source_file": "src/server.mjs",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "src_server_channelpanel",
+      "community": 48,
+      "community_name": "generate-thread-posts.ts",
+      "norm_label": "channelpanel()"
+    },
+    {
+      "label": "itemCard()",
+      "file_type": "code",
+      "source_file": "src/server.mjs",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "src_server_itemcard",
+      "community": 48,
+      "community_name": "generate-thread-posts.ts",
+      "norm_label": "itemcard()"
+    },
+    {
+      "label": "page()",
+      "file_type": "code",
+      "source_file": "src/server.mjs",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "src_server_page",
       "community": 48,
@@ -788,7 +821,7 @@
       "label": "createApprovalServer()",
       "file_type": "code",
       "source_file": "src/server.mjs",
-      "source_location": "L43",
+      "source_location": "L164",
       "_origin": "ast",
       "id": "src_server_createapprovalserver",
       "community": 48,
@@ -868,8 +901,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_store_memory_store",
-      "community": 1,
-      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
+      "community": 65,
+      "community_name": "general/index.ts",
       "norm_label": "memory-store.mjs"
     },
     {
@@ -879,8 +912,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_store_memory_store_memorystore",
-      "community": 1,
-      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
+      "community": 65,
+      "community_name": "general/index.ts",
       "norm_label": "memorystore"
     },
     {
@@ -890,8 +923,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_store_memory_store_memorystore_save",
-      "community": 1,
-      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
+      "community": 65,
+      "community_name": "general/index.ts",
       "norm_label": ".save()"
     },
     {
@@ -901,8 +934,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_store_memory_store_memorystore_get",
-      "community": 1,
-      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
+      "community": 65,
+      "community_name": "general/index.ts",
       "norm_label": ".get()"
     },
     {
@@ -912,8 +945,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_store_memory_store_memorystore_list",
-      "community": 1,
-      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
+      "community": 65,
+      "community_name": "general/index.ts",
       "norm_label": ".list()"
     },
     {
@@ -923,8 +956,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_workflow_adama_agent",
-      "community": 155,
-      "community_name": "adama-agent.mjs",
+      "community": 55,
+      "community_name": "skipUsedUrlsCheck",
       "norm_label": "adama-agent.mjs"
     },
     {
@@ -997,7 +1030,7 @@
       "label": ".requestRevision()",
       "file_type": "code",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L66",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "src_workflow_adama_agent_adamacontentagent_requestrevision",
       "community": 51,
@@ -1008,7 +1041,7 @@
       "label": ".approve()",
       "file_type": "code",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L76",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "src_workflow_adama_agent_adamacontentagent_approve",
       "community": 51,
@@ -1016,10 +1049,32 @@
       "norm_label": ".approve()"
     },
     {
+      "label": ".updateChannelDraft()",
+      "file_type": "code",
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "src_workflow_adama_agent_adamacontentagent_updatechanneldraft",
+      "community": 51,
+      "community_name": "curate-data/types.ts",
+      "norm_label": ".updatechanneldraft()"
+    },
+    {
+      "label": ".reviewChannel()",
+      "file_type": "code",
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "src_workflow_adama_agent_adamacontentagent_reviewchannel",
+      "community": 51,
+      "community_name": "curate-data/types.ts",
+      "norm_label": ".reviewchannel()"
+    },
+    {
       "label": ".schedule()",
       "file_type": "code",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L88",
+      "source_location": "L186",
       "_origin": "ast",
       "id": "src_workflow_adama_agent_adamacontentagent_schedule",
       "community": 51,
@@ -1030,7 +1085,7 @@
       "label": ".approvalInbox()",
       "file_type": "code",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L96",
+      "source_location": "L194",
       "_origin": "ast",
       "id": "src_workflow_adama_agent_adamacontentagent_approvalinbox",
       "community": 51,
@@ -1041,7 +1096,7 @@
       "label": ".#require()",
       "file_type": "code",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L100",
+      "source_location": "L198",
       "_origin": "ast",
       "id": "src_workflow_adama_agent_adamacontentagent_require",
       "community": 51,
@@ -1077,8 +1132,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "test_workflow_test",
-      "community": 55,
-      "community_name": "skipUsedUrlsCheck",
+      "community": 1,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Codex edition**",
       "norm_label": "workflow.test.mjs"
     },
     {
@@ -2026,8 +2081,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_package_dependencies_arcadeai_arcadejs",
-      "community": 58,
-      "community_name": "dependencies",
+      "community": 45,
+      "community_name": "express",
       "norm_label": "@arcadeai/arcadejs"
     },
     {
@@ -2037,8 +2092,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "arcadeai_arcadejs",
-      "community": 58,
-      "community_name": "dependencies",
+      "community": 45,
+      "community_name": "express",
       "norm_label": "@arcadeai/arcadejs"
     },
     {
@@ -2378,8 +2433,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_package_dependencies_date_fns",
-      "community": 45,
-      "community_name": "express",
+      "community": 97,
+      "community_name": "chunkArray",
       "norm_label": "date-fns"
     },
     {
@@ -2389,8 +2444,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "date_fns",
-      "community": 45,
-      "community_name": "express",
+      "community": 97,
+      "community_name": "chunkArray",
       "norm_label": "date-fns"
     },
     {
@@ -3426,8 +3481,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_backfill",
-      "community": 156,
-      "community_name": "backfill.ts",
+      "community": 18,
+      "community_name": "loop-changelog.md",
       "norm_label": "backfill.ts"
     },
     {
@@ -3437,8 +3492,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_backfill_backfill",
-      "community": 156,
-      "community_name": "backfill.ts",
+      "community": 18,
+      "community_name": "loop-changelog.md",
       "norm_label": "backfill()"
     },
     {
@@ -3448,8 +3503,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_backfill_backfillwithlinks",
-      "community": 156,
-      "community_name": "backfill.ts",
+      "community": 18,
+      "community_name": "loop-changelog.md",
       "norm_label": "backfillwithlinks()"
     },
     {
@@ -3613,8 +3668,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_get_all_used_links",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 74,
+      "community_name": "date-fns",
       "norm_label": "get-all-used-links.ts"
     },
     {
@@ -3624,8 +3679,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_get_all_used_links_getcurrentinterrupts",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 74,
+      "community_name": "date-fns",
       "norm_label": "getcurrentinterrupts()"
     },
     {
@@ -3635,8 +3690,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_get_all_used_links_getscheduledposts",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 74,
+      "community_name": "date-fns",
       "norm_label": "getscheduledposts()"
     },
     {
@@ -3646,8 +3701,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_scripts_get_all_used_links_getallusedlinks",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 74,
+      "community_name": "date-fns",
       "norm_label": "getallusedlinks()"
     },
     {
@@ -4097,8 +4152,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_constants",
-      "community": 20,
-      "community_name": "loop-debug.md",
+      "community": 30,
+      "community_name": "loop-visual-regression.md",
       "norm_label": "curate-data/constants.ts"
     },
     {
@@ -4119,8 +4174,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_index_generatepostorcontinue",
-      "community": 38,
-      "community_name": "ingest-data-graph.ts",
+      "community": 30,
+      "community_name": "loop-visual-regression.md",
       "norm_label": "generatepostorcontinue()"
     },
     {
@@ -4383,8 +4438,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_reddit",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "reddit.ts"
     },
     {
@@ -4394,8 +4449,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_reddit_getredditpostsfunc",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "getredditpostsfunc()"
     },
     {
@@ -4405,8 +4460,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_reddit_getredditposts",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 20,
+      "community_name": "loop-debug.md",
       "norm_label": "getredditposts"
     },
     {
@@ -4416,8 +4471,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_reddit_filterredditposts",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "filterredditposts()"
     },
     {
@@ -4427,8 +4482,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_reddit_getlangchainredditpostsfunc",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "getlangchainredditpostsfunc()"
     },
     {
@@ -4482,8 +4537,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_tests_reddit_int_test",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 20,
+      "community_name": "loop-debug.md",
       "norm_label": "loaders/tests/reddit.int.test.ts"
     },
     {
@@ -4493,8 +4548,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_tests_twitter_int_test",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "loaders/tests/twitter.int.test.ts"
     },
     {
@@ -4504,8 +4559,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_twitter",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "loaders/twitter.ts"
     },
     {
@@ -4515,8 +4570,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_twitter_fetchlisttweetswrapper",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "fetchlisttweetswrapper()"
     },
     {
@@ -4526,8 +4581,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_twitter_twitterloaderfunc",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "twitterloaderfunc()"
     },
     {
@@ -4537,8 +4592,8 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_twitter_twitterloader",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "twitterloader"
     },
     {
@@ -4548,8 +4603,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_loaders_twitter_twitterloaderwithlangchainfunc",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "twitterloaderwithlangchainfunc()"
     },
     {
@@ -4570,8 +4625,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_extract_ai_newsletter_content",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "extract-ai-newsletter-content.ts"
     },
     {
@@ -4581,8 +4636,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_extract_ai_newsletter_content_checktwitterurlexists",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "checktwitterurlexists()"
     },
     {
@@ -4592,8 +4647,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_extract_ai_newsletter_content_checkredditurlexists",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "checkredditurlexists()"
     },
     {
@@ -4603,8 +4658,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_extract_ai_newsletter_content_extractainewslettercontent",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "extractainewslettercontent()"
     },
     {
@@ -4922,8 +4977,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_validate_bulk_tweets",
-      "community": 97,
-      "community_name": "chunkArray",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "validate-bulk-tweets.ts"
     },
     {
@@ -4933,8 +4988,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_validate_bulk_tweets_answerschema",
-      "community": 97,
-      "community_name": "chunkArray",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "answerschema"
     },
     {
@@ -4944,8 +4999,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_validate_bulk_tweets_formattweets",
-      "community": 97,
-      "community_name": "chunkArray",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "formattweets()"
     },
     {
@@ -4955,8 +5010,8 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_nodes_validate_bulk_tweets_validatebulktweets",
-      "community": 97,
-      "community_name": "chunkArray",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "validatebulktweets()"
     },
     {
@@ -5065,8 +5120,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_state_curatedataconfigurable",
-      "community": 20,
-      "community_name": "loop-debug.md",
+      "community": 30,
+      "community_name": "loop-visual-regression.md",
       "norm_label": "curatedataconfigurable"
     },
     {
@@ -5120,8 +5175,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_types_tweetsgroupedbycontent",
-      "community": 30,
-      "community_name": "loop-visual-regression.md",
+      "community": 0,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Claude edition**",
       "norm_label": "tweetsgroupedbycontent"
     },
     {
@@ -5153,8 +5208,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_created_at_after",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "created-at-after.ts"
     },
     {
@@ -5164,8 +5219,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_created_at_after_createdatafter",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "createdatafter()"
     },
     {
@@ -5175,8 +5230,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_get_unique_array",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "get-unique-array.ts"
     },
     {
@@ -5186,8 +5241,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_get_unique_array_getuniquearrayitems",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "getuniquearrayitems()"
     },
     {
@@ -5285,8 +5340,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_stores_reddit_post_ids",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "reddit-post-ids.ts"
     },
     {
@@ -5296,8 +5351,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_stores_reddit_post_ids_namespace",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "namespace"
     },
     {
@@ -5307,8 +5362,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_stores_reddit_post_ids_putredditpostids",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "putredditpostids()"
     },
     {
@@ -5318,8 +5373,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_stores_reddit_post_ids_getredditpostids",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": "getredditpostids()"
     },
     {
@@ -5373,8 +5428,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_stores_twitter_putlastingestedtweetid",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "putlastingestedtweetid()"
     },
     {
@@ -5384,8 +5439,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_curate_data_utils_stores_twitter_getlastingestedtweetid",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "getlastingestedtweetid()"
     },
     {
@@ -5703,8 +5758,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_find_and_generate_images_nodes_re_rank_images",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "re-rank-images.ts"
     },
     {
@@ -5714,8 +5769,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_find_and_generate_images_nodes_re_rank_images_parseresult",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "parseresult()"
     },
     {
@@ -5725,8 +5780,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_find_and_generate_images_nodes_re_rank_images_rerankimages",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "rerankimages()"
     },
     {
@@ -5857,8 +5912,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_constants_allowed_times",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "allowed_times"
     },
     {
@@ -5945,8 +6000,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_generate_post_graph_checkifurlsarepreviouslyused",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "checkifurlsarepreviouslyused()"
     },
     {
@@ -5956,8 +6011,8 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_generate_post_graph_generatereportorendconditionaledge",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "generatereportorendconditionaledge()"
     },
     {
@@ -5989,8 +6044,8 @@
       "source_location": "L271",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_generate_post_graph_generatepostgraph",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "generatepostgraph"
     },
     {
@@ -6099,8 +6154,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_auth_socials",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "auth-socials.ts"
     },
     {
@@ -6110,8 +6165,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_auth_socials_authsocialspassthrough",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "authsocialspassthrough()"
     },
     {
@@ -6121,8 +6176,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_condense_post",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "condense-post.ts"
     },
     {
@@ -6132,8 +6187,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_condense_post_condensepost",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "condensepost()"
     },
     {
@@ -6143,8 +6198,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_generate_post_index",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "generate-post/index.ts"
     },
     {
@@ -6154,8 +6209,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_generate_post_index_generatepost",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "generatepost()"
     },
     {
@@ -6176,8 +6231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_generate_post_utils",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "generate-post/utils.ts"
     },
     {
@@ -6187,8 +6242,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_generate_post_utils_parsegeneration",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "parsegeneration()"
     },
     {
@@ -6198,8 +6253,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_nodes_generate_post_utils_formatprompt",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "formatprompt()"
     },
     {
@@ -6297,8 +6352,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_prompts_examples",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "examples.ts"
     },
     {
@@ -6308,8 +6363,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_post_prompts_examples_examples",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "examples"
     },
     {
@@ -6451,8 +6506,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_report_nodes_generate_report_formatreportpromptparams",
-      "community": 30,
-      "community_name": "loop-visual-regression.md",
+      "community": 0,
+      "community_name": "Universal Autonomous-Agent Operating Framework \u2014 **Claude edition**",
       "norm_label": "formatreportpromptparams"
     },
     {
@@ -6649,8 +6704,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_generate_thread_posts",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "generate-thread-posts.ts"
     },
     {
@@ -6660,8 +6715,8 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_generate_thread_posts_generatethreadposts",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "generatethreadposts()"
     },
     {
@@ -6671,8 +6726,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "generate-thread/nodes/human-node/index.ts"
     },
     {
@@ -6682,8 +6737,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_constructdescriptionargs",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "constructdescriptionargs"
     },
     {
@@ -6693,8 +6748,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_constructdescription",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "constructdescription()"
     },
     {
@@ -6704,8 +6759,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_getunknownresponsedescription",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "getunknownresponsedescription()"
     },
     {
@@ -6715,8 +6770,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_extractthreadpostsfromargs",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "extractthreadpostsfromargs()"
     },
     {
@@ -6726,8 +6781,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_humannode",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "humannode()"
     },
     {
@@ -6737,8 +6792,8 @@
       "source_location": "L229",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_rationale_229",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "todo: handle invalid dates better"
     },
     {
@@ -6748,8 +6803,8 @@
       "source_location": "L250",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_nodes_human_node_index_rationale_250",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "todo: update so if the mime type is blacklisted, it re-routes to human node with"
     },
     {
@@ -6847,8 +6902,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_types",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "generate-thread/types.ts"
     },
     {
@@ -6858,8 +6913,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_types_threadpost",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "threadpost"
     },
     {
@@ -6869,8 +6924,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_utils",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "generate-thread/utils.ts"
     },
     {
@@ -6880,8 +6935,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_utils_formatreportsforprompt",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "formatreportsforprompt()"
     },
     {
@@ -6891,8 +6946,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_utils_formatbodypostsforprompt",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "formatbodypostsforprompt()"
     },
     {
@@ -6902,8 +6957,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_utils_formatallpostsforprompt",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "formatallpostsforprompt()"
     },
     {
@@ -6913,8 +6968,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_utils_formattweetexamplesforprompt",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "formattweetexamplesforprompt()"
     },
     {
@@ -6924,8 +6979,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_generate_thread_utils_parsetweetgeneration",
-      "community": 11,
-      "community_name": "Project Guardrails",
+      "community": 58,
+      "community_name": "dependencies",
       "norm_label": "parsetweetgeneration()"
     },
     {
@@ -6979,8 +7034,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_ingest_data_state",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "ingest-data-state.ts"
     },
     {
@@ -6990,8 +7045,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_ingest_data_state_langchainproduct",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "langchainproduct"
     },
     {
@@ -7001,8 +7056,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_ingest_data_state_simpleslackmessagewithlinks",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "simpleslackmessagewithlinks"
     },
     {
@@ -7023,8 +7078,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_ingest_data_state_ingestdataconfigurableannotation",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "ingestdataconfigurableannotation"
     },
     {
@@ -7034,8 +7089,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_nodes_ingest_slack",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "ingest-data/nodes/ingest-slack.ts"
     },
     {
@@ -7045,8 +7100,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_nodes_ingest_slack_getchannelidfromconfig",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "getchannelidfromconfig()"
     },
     {
@@ -7056,8 +7111,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_data_nodes_ingest_slack_ingestslackdata",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "ingestslackdata()"
     },
     {
@@ -7100,8 +7155,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_constants",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingest-repurposed-data/constants.ts"
     },
     {
@@ -7111,8 +7166,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_index",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingest-repurposed-data/index.ts"
     },
     {
@@ -7122,8 +7177,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_index_generatepostsfrommessages",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "generatepostsfrommessages()"
     },
     {
@@ -7133,8 +7188,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_index_ingestslackmessagesorskip",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingestslackmessagesorskip()"
     },
     {
@@ -7144,8 +7199,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_index_builder",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "builder"
     },
     {
@@ -7155,8 +7210,8 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_index_graph",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "graph"
     },
     {
@@ -7166,8 +7221,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_extract",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "extract.ts"
     },
     {
@@ -7177,8 +7232,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_extract_extractionschema",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "extractionschema"
     },
     {
@@ -7188,8 +7243,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_extract_extractcontentsfunc",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "extractcontentsfunc()"
     },
     {
@@ -7199,8 +7254,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_extract_extractcontents",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "extractcontents"
     },
     {
@@ -7210,8 +7265,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_extract_extract",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "extract()"
     },
     {
@@ -7221,8 +7276,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_extract_rationale_123",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "todo: update slack message handler to include fileids"
     },
     {
@@ -7232,8 +7287,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_ingest_slack",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingest-repurposed-data/nodes/ingest-slack.ts"
     },
     {
@@ -7243,8 +7298,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_ingest_slack_getchannelidfromconfig",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "getchannelidfromconfig()"
     },
     {
@@ -7254,8 +7309,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_nodes_ingest_slack_ingestslackmessages",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingestslackmessages()"
     },
     {
@@ -7265,8 +7320,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_types",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingest-repurposed-data/types.ts"
     },
     {
@@ -7276,8 +7331,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_types_repurposedcontent",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "repurposedcontent"
     },
     {
@@ -7287,8 +7342,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_types_ingestrepurposeddataannotation",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingestrepurposeddataannotation"
     },
     {
@@ -7298,8 +7353,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_types_ingestrepurposeddatastate",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingestrepurposeddatastate"
     },
     {
@@ -7309,8 +7364,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_types_ingestrepurposeddataupdate",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingestrepurposeddataupdate"
     },
     {
@@ -7320,8 +7375,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_ingest_repurposed_data_types_ingestrepurposeddataconfigurableannotation",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "ingestrepurposeddataconfigurableannotation"
     },
     {
@@ -7331,8 +7386,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_reflection_index",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "reflection/index.ts"
     },
     {
@@ -7342,8 +7397,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_reflection_index_reflectionannotation",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "reflectionannotation"
     },
     {
@@ -7353,8 +7408,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_reflection_index_reflection",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "reflection()"
     },
     {
@@ -7364,8 +7419,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_reflection_index_reflectionworkflow",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "reflectionworkflow"
     },
     {
@@ -7375,8 +7430,8 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_reflection_index_reflectiongraph",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "reflectiongraph"
     },
     {
@@ -7628,8 +7683,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_index",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposer/index.ts"
     },
     {
@@ -7639,8 +7694,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_index_repurposerbuilder",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposerbuilder"
     },
     {
@@ -7650,8 +7705,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_index_repurposergraph",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposergraph"
     },
     {
@@ -7716,8 +7771,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_extract_content_index",
-      "community": 31,
-      "community_name": "Repository selection for the ADAMA social media agent",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "extract-content/index.ts"
     },
     {
@@ -7727,8 +7782,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_extract_content_index_extractcontent",
-      "community": 31,
-      "community_name": "Repository selection for the ADAMA social media agent",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "extractcontent()"
     },
     {
@@ -7738,8 +7793,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_generate_campaign_plan",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "generate-campaign-plan.ts"
     },
     {
@@ -7749,8 +7804,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_generate_campaign_plan_generatecampaignplan",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "generatecampaignplan()"
     },
     {
@@ -7760,8 +7815,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_generate_posts",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposer/nodes/generate-posts.ts"
     },
     {
@@ -7771,8 +7826,8 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_generate_posts_formatuserprompt",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "formatuserprompt()"
     },
     {
@@ -7782,8 +7837,8 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_generate_posts_generateposts",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "generateposts()"
     },
     {
@@ -7793,8 +7848,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_start_interrupt_graph",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "start-interrupt-graph.ts"
     },
     {
@@ -7804,8 +7859,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_start_interrupt_graph_startinterruptgraphruns",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "startinterruptgraphruns()"
     },
     {
@@ -7815,8 +7870,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "repurposer/nodes/validate-images.ts"
     },
     {
@@ -7826,8 +7881,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images_parseresult",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "parseresult()"
     },
     {
@@ -7837,8 +7892,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images_removeprotectedurls",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "removeprotectedurls()"
     },
     {
@@ -7848,8 +7903,8 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images_getprotectedurls",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "getprotectedurls()"
     },
     {
@@ -7859,8 +7914,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images_filterimageurls",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "filterimageurls()"
     },
     {
@@ -7870,8 +7925,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images_extractindicesfromtext",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "extractindicesfromtext"
     },
     {
@@ -7881,8 +7936,8 @@
       "source_location": "L167",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_nodes_validate_images_validateimages",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "validateimages()"
     },
     {
@@ -7903,8 +7958,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_tests_images_test",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "images.test.ts"
     },
     {
@@ -7914,8 +7969,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposer/types.ts"
     },
     {
@@ -7925,8 +7980,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types_image",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "image"
     },
     {
@@ -7936,8 +7991,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types_repurposergraphannotation",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposergraphannotation"
     },
     {
@@ -7947,8 +8002,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types_repurposerstate",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposerstate"
     },
     {
@@ -7958,8 +8013,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types_repurposerupdate",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposerupdate"
     },
     {
@@ -7969,8 +8024,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types_repurposerinputannotation",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposerinputannotation"
     },
     {
@@ -7980,8 +8035,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_types_repurposerconfigurableannotation",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposerconfigurableannotation"
     },
     {
@@ -7991,8 +8046,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_utils",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "repurposer/utils.ts"
     },
     {
@@ -8002,8 +8057,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_repurposer_utils_formatreportforprompt",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 52,
+      "community_name": "reflections.ts",
       "norm_label": "formatreportforprompt()"
     },
     {
@@ -8013,8 +8068,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_linkedin",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "auth/linkedin.ts"
     },
     {
@@ -8024,8 +8079,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_linkedin_getbasiclinkedinauthorinterrupt",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "getbasiclinkedinauthorinterrupt()"
     },
     {
@@ -8035,8 +8090,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_linkedin_getarcadelinkedinauthorinterrupt",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "getarcadelinkedinauthorinterrupt()"
     },
     {
@@ -8046,8 +8101,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_linkedin_getlinkedinauthorinterrupt",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "getlinkedinauthorinterrupt()"
     },
     {
@@ -8057,8 +8112,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_twitter",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "auth/twitter.ts"
     },
     {
@@ -8079,8 +8134,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_twitter_getbasictwitterauthorinterrupt",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "getbasictwitterauthorinterrupt()"
     },
     {
@@ -8090,8 +8145,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_auth_twitter_gettwitterauthorinterrupt",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "gettwitterauthorinterrupt()"
     },
     {
@@ -8354,8 +8409,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_update_scheduled_date",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "update-scheduled-date.ts"
     },
     {
@@ -8365,8 +8420,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_update_scheduled_date_scheduledateschema",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "scheduledateschema"
     },
     {
@@ -8376,8 +8431,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_update_scheduled_date_updatescheduleddate",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "updatescheduleddate()"
     },
     {
@@ -8387,8 +8442,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_content",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 49,
+      "community_name": "verify-github.ts",
       "norm_label": "verify-content.ts"
     },
     {
@@ -8398,8 +8453,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_content_relevancy_schema",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 49,
+      "community_name": "verify-github.ts",
       "norm_label": "relevancy_schema"
     },
     {
@@ -8409,8 +8464,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_content_verifycontentisrelevantfunc",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 49,
+      "community_name": "verify-github.ts",
       "norm_label": "verifycontentisrelevantfunc()"
     },
     {
@@ -8420,8 +8475,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_content_verifycontentisrelevant",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 49,
+      "community_name": "verify-github.ts",
       "norm_label": "verifycontentisrelevant"
     },
     {
@@ -8431,8 +8486,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_content_rationale_30",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 49,
+      "community_name": "verify-github.ts",
       "norm_label": "todo: type casting as any here shouldn't be required..."
     },
     {
@@ -8563,8 +8618,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_github_getgithubcontentsandtypefromurl",
-      "community": 49,
-      "community_name": "verify-github.ts",
+      "community": 18,
+      "community_name": "loop-changelog.md",
       "norm_label": "getgithubcontentsandtypefromurl()"
     },
     {
@@ -8673,8 +8728,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_youtube",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 43,
+      "community_name": "prompts/index.ts",
       "norm_label": "verify-youtube.ts"
     },
     {
@@ -8684,8 +8739,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_youtube_verifyyoutubecontentreturn",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 43,
+      "community_name": "prompts/index.ts",
       "norm_label": "verifyyoutubecontentreturn"
     },
     {
@@ -8695,8 +8750,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_youtube_relevancy_schema",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 43,
+      "community_name": "prompts/index.ts",
       "norm_label": "relevancy_schema"
     },
     {
@@ -8706,8 +8761,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_nodes_verify_youtube_verifyyoutubecontent",
-      "community": 42,
-      "community_name": "video-summary.ts",
+      "community": 43,
+      "community_name": "prompts/index.ts",
       "norm_label": "verifyyoutubecontent()"
     },
     {
@@ -8805,8 +8860,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_shared_state",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 33,
+      "community_name": "verify-links-graph.ts",
       "norm_label": "shared-state.ts"
     },
     {
@@ -8816,8 +8871,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_shared_state_verifycontentannotation",
-      "community": 35,
-      "community_name": "reddit/types.ts",
+      "community": 33,
+      "community_name": "verify-links-graph.ts",
       "norm_label": "verifycontentannotation"
     },
     {
@@ -8827,8 +8882,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_stores_post_subject_urls",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "post-subject-urls.ts"
     },
     {
@@ -8838,8 +8893,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_stores_post_subject_urls_namespace",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "namespace"
     },
     {
@@ -8849,8 +8904,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_stores_post_subject_urls_saveusedurls",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "saveusedurls()"
     },
     {
@@ -8860,8 +8915,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_shared_stores_post_subject_urls_getsavedurls",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "getsavedurls()"
     },
     {
@@ -8981,8 +9036,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_should_exclude_shouldexcludetweetcontent",
-      "community": 38,
-      "community_name": "ingest-data-graph.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "shouldexcludetweetcontent()"
     },
     {
@@ -9289,8 +9344,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_types_image",
-      "community": 32,
-      "community_name": "repurposer/index.ts",
+      "community": 25,
+      "community_name": "loop-lint.md",
       "norm_label": "image"
     },
     {
@@ -9487,8 +9542,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_blacklisted_mime_types",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "blacklisted_mime_types"
     },
     {
@@ -9509,8 +9564,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_extracturlsfromslacktext",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "extracturlsfromslacktext()"
     },
     {
@@ -9542,8 +9597,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_extracturls",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "extracturls()"
     },
     {
@@ -9553,8 +9608,8 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_removeurls",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "removeurls()"
     },
     {
@@ -9575,8 +9630,8 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_isvalidurl",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "isvalidurl()"
     },
     {
@@ -9586,8 +9641,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_imageurltobuffer",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "imageurltobuffer()"
     },
     {
@@ -9597,8 +9652,8 @@
       "source_location": "L250",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_extractmimetypefrombase64",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 22,
+      "community_name": "loop-e2e.md",
       "norm_label": "extractmimetypefrombase64()"
     },
     {
@@ -9608,8 +9663,8 @@
       "source_location": "L301",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_processimageinput",
-      "community": 64,
-      "community_name": "reflect-tweet-groups.ts",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "processimageinput()"
     },
     {
@@ -9685,8 +9740,8 @@
       "source_location": "L386",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_geturltype",
-      "community": 18,
-      "community_name": "loop-changelog.md",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "geturltype()"
     },
     {
@@ -9696,8 +9751,8 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_getmimetypefromurl",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "getmimetypefromurl()"
     },
     {
@@ -9707,8 +9762,8 @@
       "source_location": "L482",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_removequeryparams",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "removequeryparams()"
     },
     {
@@ -9718,8 +9773,8 @@
       "source_location": "L499",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_chunkarray",
-      "community": 97,
-      "community_name": "chunkArray",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "chunkarray()"
     },
     {
@@ -9740,8 +9795,8 @@
       "source_location": "L515",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_shouldposttolinkedinorg",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "shouldposttolinkedinorg()"
     },
     {
@@ -9773,8 +9828,8 @@
       "source_location": "L576",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_filterlinksforpostcontent",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "filterlinksforpostcontent()"
     },
     {
@@ -9806,8 +9861,8 @@
       "source_location": "L605",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_usearcadeauth",
-      "community": 39,
-      "community_name": "verify-general.ts",
+      "community": 56,
+      "community_name": "generatePostGraph",
       "norm_label": "usearcadeauth()"
     },
     {
@@ -9817,8 +9872,8 @@
       "source_location": "L614",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_usetwitterapionly",
-      "community": 26,
-      "community_name": "loop-migrate.md",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": "usetwitterapionly()"
     },
     {
@@ -9839,8 +9894,8 @@
       "source_location": "L633",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_skipcontentrelevancycheck",
-      "community": 33,
-      "community_name": "verify-links-graph.ts",
+      "community": 41,
+      "community_name": "content.mjs",
       "norm_label": "skipcontentrelevancycheck"
     },
     {
@@ -9861,8 +9916,8 @@
       "source_location": "L651",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_utils_skipusedurlscheck",
-      "community": 57,
-      "community_name": "human-node.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "skipusedurlscheck"
     },
     {
@@ -9905,8 +9960,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_verify_links_verify_links_graph_routelinktypes",
-      "community": 18,
-      "community_name": "loop-changelog.md",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "routelinktypes()"
     },
     {
@@ -10015,8 +10070,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_verify_reddit_post_nodes_get_external_urls",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "get-external-urls.ts"
     },
     {
@@ -10026,8 +10081,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_verify_reddit_post_nodes_get_external_urls_getexternalurls",
-      "community": 34,
-      "community_name": "extract-ai-newsletter-content.ts",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "getexternalurls()"
     },
     {
@@ -10312,8 +10367,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_agents_verify_reddit_post_verify_reddit_post_graph_routeposturls",
-      "community": 18,
-      "community_name": "loop-changelog.md",
+      "community": 31,
+      "community_name": "Repository selection for the ADAMA social media agent",
       "norm_label": "routeposturls()"
     },
     {
@@ -10928,8 +10983,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_reddit_client_redditclient_fromuserless",
-      "community": 40,
-      "community_name": "ingest-data.ts",
+      "community": 47,
+      "community_name": "adama-profile.mjs",
       "norm_label": ".fromuserless()"
     },
     {
@@ -11621,8 +11676,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_slack_client_simpleslackmessage",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 39,
+      "community_name": "verify-general.ts",
       "norm_label": "simpleslackmessage"
     },
     {
@@ -11819,8 +11874,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_slack_utils_getpublicfileurls",
-      "community": 4,
-      "community_name": "Execution plan (in order; stop and ask if anything is ambiguous)",
+      "community": 37,
+      "community_name": "find-and-generate-images-graph.ts",
       "norm_label": "getpublicfileurls"
     },
     {
@@ -11830,8 +11885,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 22,
+      "community_name": "loop-e2e.md",
       "norm_label": "twitter/client.ts"
     },
     {
@@ -11841,8 +11896,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client_base_fetch_tweet_options",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 22,
+      "community_name": "loop-e2e.md",
       "norm_label": "base_fetch_tweet_options"
     },
     {
@@ -11852,8 +11907,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client_mediaidstringarray",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 22,
+      "community_name": "loop-e2e.md",
       "norm_label": "mediaidstringarray"
     },
     {
@@ -11874,8 +11929,8 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client_twitterclient_constructor",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 21,
+      "community_name": "loop-docs-sync.md",
       "norm_label": ".constructor()"
     },
     {
@@ -11896,8 +11951,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client_twitterclient_frombasictwitterauth",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": ".frombasictwitterauth()"
     },
     {
@@ -12017,8 +12072,8 @@
       "source_location": "L508",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client_twitterclient_getlisttweets",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": ".getlisttweets()"
     },
     {
@@ -12028,8 +12083,8 @@
       "source_location": "L542",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_client_twitterclient_searchtweets",
-      "community": 37,
-      "community_name": "find-and-generate-images-graph.ts",
+      "community": 44,
+      "community_name": "validate-bulk-tweets.ts",
       "norm_label": ".searchtweets()"
     },
     {
@@ -12061,8 +12116,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_tests_arcade_int_test",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 22,
+      "community_name": "loop-e2e.md",
       "norm_label": "arcade.int.test.ts"
     },
     {
@@ -12072,8 +12127,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_tests_twitter_int_test",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 22,
+      "community_name": "loop-e2e.md",
       "norm_label": "twitter/tests/twitter.int.test.ts"
     },
     {
@@ -12083,8 +12138,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_types",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 26,
+      "community_name": "loop-migrate.md",
       "norm_label": "twitter/types.ts"
     },
     {
@@ -12105,8 +12160,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_types_createmediarequest",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 26,
+      "community_name": "loop-migrate.md",
       "norm_label": "createmediarequest"
     },
     {
@@ -12116,8 +12171,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_clients_twitter_types_twitterclientargs",
-      "community": 44,
-      "community_name": "validate-bulk-tweets.ts",
+      "community": 21,
+      "community_name": "loop-docs-sync.md",
       "norm_label": "twitterclientargs"
     },
     {
@@ -12259,8 +12314,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_general_index",
-      "community": 65,
-      "community_name": "general/index.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "general/index.ts"
     },
     {
@@ -12270,8 +12325,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_general_index_rungraph",
-      "community": 65,
-      "community_name": "general/index.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "rungraph()"
     },
     {
@@ -12281,8 +12336,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_general_index_evaluatepost",
-      "community": 65,
-      "community_name": "general/index.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "evaluatepost()"
     },
     {
@@ -12292,8 +12347,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_general_index_runeval",
-      "community": 65,
-      "community_name": "general/index.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "runeval()"
     },
     {
@@ -12303,8 +12358,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_general_index_rationale_24",
-      "community": 65,
-      "community_name": "general/index.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "todo: implement evaluation logic"
     },
     {
@@ -12314,8 +12369,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_github_index",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "github/index.ts"
     },
     {
@@ -12325,8 +12380,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_github_index_rungraph",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "rungraph()"
     },
     {
@@ -12336,8 +12391,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_github_index_evaluatepost",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "evaluatepost()"
     },
     {
@@ -12347,8 +12402,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_github_index_runeval",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "runeval()"
     },
     {
@@ -12358,8 +12413,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_twitter_index",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "twitter/index.ts"
     },
     {
@@ -12369,8 +12424,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_twitter_index_rungraph",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "rungraph()"
     },
     {
@@ -12380,8 +12435,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_twitter_index_evaluatepost",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "evaluatepost()"
     },
     {
@@ -12391,8 +12446,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_twitter_index_runeval",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "runeval()"
     },
     {
@@ -12402,8 +12457,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_twitter_index_rationale_24",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "todo: implement evaluation logic"
     },
     {
@@ -12468,8 +12523,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_youtube_index",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "youtube/index.ts"
     },
     {
@@ -12479,8 +12534,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_youtube_index_rungraph",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "rungraph()"
     },
     {
@@ -12490,8 +12545,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_youtube_index_evaluatepost",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "evaluatepost()"
     },
     {
@@ -12501,8 +12556,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_youtube_index_runeval",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "runeval()"
     },
     {
@@ -12512,8 +12567,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_evals_youtube_index_rationale_24",
-      "community": 56,
-      "community_name": "generatePostGraph",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "todo: implement evaluation logic"
     },
     {
@@ -12523,8 +12578,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_tests_agent_test",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "agent.test.ts"
     },
     {
@@ -12798,8 +12853,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_date",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "date.ts"
     },
     {
@@ -12809,8 +12864,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_date_priority_levels",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "priority_levels"
     },
     {
@@ -12820,8 +12875,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_date_timezonetoutc",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "timezonetoutc()"
     },
     {
@@ -12831,8 +12886,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_date_getnextsaturdaydate",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 57,
+      "community_name": "human-node.ts",
       "norm_label": "getnextsaturdaydate()"
     },
     {
@@ -12842,8 +12897,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_date_isvaliddatestring",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "isvaliddatestring()"
     },
     {
@@ -12853,8 +12908,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_date_parsedateresponse",
-      "community": 25,
-      "community_name": "loop-lint.md",
+      "community": 64,
+      "community_name": "reflect-tweet-groups.ts",
       "norm_label": "parsedateresponse()"
     },
     {
@@ -12963,8 +13018,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_github_repo_contents_getrepocontents",
-      "community": 49,
-      "community_name": "verify-github.ts",
+      "community": 18,
+      "community_name": "loop-changelog.md",
       "norm_label": "getrepocontents()"
     },
     {
@@ -12996,8 +13051,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_image_message",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "image-message.ts"
     },
     {
@@ -13007,8 +13062,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_image_message_getimagemessagecontents",
-      "community": 74,
-      "community_name": "date-fns",
+      "community": 60,
+      "community_name": "re-group-tweets.ts",
       "norm_label": "getimagemessagecontents()"
     },
     {
@@ -13018,8 +13073,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "reflections.ts"
     },
     {
@@ -13029,8 +13084,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections_namespace",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "namespace"
     },
     {
@@ -13040,8 +13095,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections_getreflectionsprompt",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "getreflectionsprompt()"
     },
     {
@@ -13051,8 +13106,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections_putreflectionsprompt",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "putreflectionsprompt()"
     },
     {
@@ -13062,8 +13117,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections_getreflections",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "getreflections()"
     },
     {
@@ -13073,8 +13128,8 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections_putreflections",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "putreflections()"
     },
     {
@@ -13095,8 +13150,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "vendor_langchain_social_media_agent_src_utils_reflections_putthreadreflections",
-      "community": 52,
-      "community_name": "reflections.ts",
+      "community": 24,
+      "community_name": "loop-investigate.md",
       "norm_label": "putthreadreflections()"
     },
     {
@@ -14555,7 +14610,7 @@
       "label": "P1 \u2014 required before live publishing",
       "file_type": "document",
       "source_file": "docs/implementation-backlog.md",
-      "source_location": "L22",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "docs_implementation_backlog_p1_required_before_live_publishing",
       "community": 92,
@@ -14566,7 +14621,7 @@
       "label": "P2 \u2014 growth loop",
       "file_type": "document",
       "source_file": "docs/implementation-backlog.md",
-      "source_location": "L36",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "docs_implementation_backlog_p2_growth_loop",
       "community": 92,
@@ -14577,7 +14632,7 @@
       "label": "External blockers",
       "file_type": "document",
       "source_file": "docs/implementation-backlog.md",
-      "source_location": "L44",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "docs_implementation_backlog_external_blockers",
       "community": 92,
@@ -14632,7 +14687,7 @@
       "label": "Safety",
       "file_type": "document",
       "source_file": "docs/operator-runbook.md",
-      "source_location": "L30",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "docs_operator_runbook_safety",
       "community": 68,
@@ -16356,10 +16411,21 @@
       "norm_label": "wiki log"
     },
     {
-      "label": "[2026-07-25] update | make ADAMA shadow mode operational across channels",
+      "label": "[2026-07-25] update | add editable per-channel approval workspace",
       "file_type": "document",
       "source_file": "wiki/log.md",
       "source_location": "L10",
+      "_origin": "ast",
+      "id": "wiki_log_2026_07_25_update_add_editable_per_channel_approval_workspace",
+      "community": 17,
+      "community_name": "log.md",
+      "norm_label": "[2026-07-25] update | add editable per-channel approval workspace"
+    },
+    {
+      "label": "[2026-07-25] update | make ADAMA shadow mode operational across channels",
+      "file_type": "document",
+      "source_file": "wiki/log.md",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "wiki_log_2026_07_25_update_make_adama_shadow_mode_operational_across_channels",
       "community": 17,
@@ -16370,7 +16436,7 @@
       "label": "[2026-07-25] ingest | index local Downloads and work vaults",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L18",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "wiki_log_2026_07_25_ingest_index_local_downloads_and_work_vaults",
       "community": 17,
@@ -16381,7 +16447,7 @@
       "label": "[2026-07-25] update | add content planning and shadow-mode gates",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L26",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "wiki_log_2026_07_25_update_add_content_planning_and_shadow_mode_gates",
       "community": 17,
@@ -16392,7 +16458,7 @@
       "label": "[2026-07-25] update | build ADAMA mock approval pipeline",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L34",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "wiki_log_2026_07_25_update_build_adama_mock_approval_pipeline",
       "community": 17,
@@ -16403,7 +16469,7 @@
       "label": "[2026-07-25] ingest | ADAMA project brief and repository research",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L42",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "wiki_log_2026_07_25_ingest_adama_project_brief_and_repository_research",
       "community": 17,
@@ -16414,7 +16480,7 @@
       "label": "[2026-07-25] update | adopt universal agent framework",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L50",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "wiki_log_2026_07_25_update_adopt_universal_agent_framework",
       "community": 17,
@@ -17529,7 +17595,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L84",
+      "source_location": "L107",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_approve",
@@ -17541,7 +17607,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L72",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_requestrevision",
@@ -17553,7 +17619,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L41",
+      "source_location": "L171",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_workflow_adama_agent_adamacontentagent_reviewchannel",
+      "target": "src_domain_content_transition"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_runtoapproval",
@@ -17565,7 +17643,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L92",
+      "source_location": "L190",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_schedule",
@@ -17788,7 +17866,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/server.mjs",
-      "source_location": "L43",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server",
+      "target": "src_server_channelpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/server.mjs",
+      "source_location": "L164",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_server",
@@ -17800,6 +17889,28 @@
       "confidence": "EXTRACTED",
       "source_file": "src/server.mjs",
       "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server",
+      "target": "src_server_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/server.mjs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server",
+      "target": "src_server_itemcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/server.mjs",
+      "source_location": "L85",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_server",
@@ -17834,7 +17945,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/server.mjs",
-      "source_location": "L48",
+      "source_location": "L170",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_server_createapprovalserver",
@@ -17846,7 +17957,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/server.mjs",
-      "source_location": "L54",
+      "source_location": "L176",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_server_createapprovalserver",
@@ -17858,7 +17969,55 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/server.mjs",
-      "source_location": "L48",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server_channelpanel",
+      "target": "src_server_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/server.mjs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server_itemcard",
+      "target": "src_server_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/server.mjs",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server_itemcard",
+      "target": "src_server_channelpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "src/server.mjs",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_server_page",
+      "target": "src_server_itemcard",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/server.mjs",
+      "source_location": "L170",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_server_createapprovalserver",
@@ -18050,7 +18209,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L96",
+      "source_location": "L194",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent",
@@ -18061,7 +18220,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L76",
+      "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent",
@@ -18105,7 +18264,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L66",
+      "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent",
@@ -18116,11 +18275,22 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L100",
+      "source_location": "L198",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent",
       "target": "src_workflow_adama_agent_adamacontentagent_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_workflow_adama_agent_adamacontentagent",
+      "target": "src_workflow_adama_agent_adamacontentagent_reviewchannel",
       "confidence_score": 1.0
     },
     {
@@ -18138,11 +18308,22 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L88",
+      "source_location": "L186",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent",
       "target": "src_workflow_adama_agent_adamacontentagent_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_workflow_adama_agent_adamacontentagent",
+      "target": "src_workflow_adama_agent_adamacontentagent_updatechanneldraft",
       "confidence_score": 1.0
     },
     {
@@ -18162,7 +18343,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L67",
+      "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_requestrevision",
@@ -18174,7 +18355,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L77",
+      "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_approve",
@@ -18186,7 +18367,31 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/workflow/adama-agent.mjs",
-      "source_location": "L89",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_workflow_adama_agent_adamacontentagent_updatechanneldraft",
+      "target": "src_workflow_adama_agent_adamacontentagent_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_workflow_adama_agent_adamacontentagent_reviewchannel",
+      "target": "src_workflow_adama_agent_adamacontentagent_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/workflow/adama-agent.mjs",
+      "source_location": "L187",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_workflow_adama_agent_adamacontentagent_schedule",
@@ -47224,7 +47429,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/concepts/multichannel-shadow-mode.md",
-      "source_location": "L31",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_concepts_multichannel_shadow_mode",
@@ -47290,7 +47495,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/concepts/multichannel-shadow-mode.md",
-      "source_location": "L30",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_concepts_multichannel_shadow_mode",
@@ -47301,7 +47506,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/implementation-backlog.md",
-      "source_location": "L44",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_implementation_backlog_adama_implementation_backlog",
@@ -47323,7 +47528,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/implementation-backlog.md",
-      "source_location": "L22",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_implementation_backlog_adama_implementation_backlog",
@@ -47334,7 +47539,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/implementation-backlog.md",
-      "source_location": "L36",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_implementation_backlog_adama_implementation_backlog",
@@ -47367,7 +47572,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/concepts/multichannel-shadow-mode.md",
-      "source_location": "L32",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_concepts_multichannel_shadow_mode",
@@ -47400,7 +47605,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/operator-runbook.md",
-      "source_location": "L30",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_operator_runbook_adama_shadow_mode_runbook",
@@ -49127,7 +49332,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L42",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_log_wiki_log",
@@ -49138,7 +49343,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L18",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_log_wiki_log",
@@ -49149,7 +49354,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L26",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_log_wiki_log",
@@ -49160,7 +49365,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L50",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "wiki_log_wiki_log",
+      "target": "wiki_log_2026_07_25_update_add_editable_per_channel_approval_workspace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/log.md",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_log_wiki_log",
@@ -49171,7 +49387,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L34",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_log_wiki_log",
@@ -49182,7 +49398,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L10",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "wiki_log_wiki_log",
@@ -49323,5 +49539,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b49b46d8586770a8ab9de392e00cb1f7911f7bc0"
+  "built_at_commit": "1e6ec45bcbce2ca3cfdea7824fbc9f190493def1"
 }
