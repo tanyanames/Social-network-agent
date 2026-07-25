@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "node src/server.mjs",
     "demo": "node scripts/demo.mjs",
+    "batch": "node scripts/generate-batch.mjs",
     "test": "node --test test/*.test.mjs",
     "check": "node --check src/server.mjs && node --test test/*.test.mjs"
   }

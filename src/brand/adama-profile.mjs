@@ -5,9 +5,30 @@ export const ADAMA_BRAND_PROFILE = Object.freeze({
   primaryLanguage: "ru",
   tone: ["fresh", "young", "bold", "warm", "community-first"],
   visual: {
-    palette: ["lime", "green", "black", "white"],
-    typography: "large and bold",
-    direction: "minimal but emotional",
+    status: "provisional_pending_full_design_audit",
+    targetPalette: ["lime", "green", "black", "white"],
+    observedLegacyPalette: {
+      coralOrange: "#FF7657",
+      skyBlue: "#86BDD2",
+      warmWhite: "#F4F4F6",
+      black: "#000000",
+    },
+    typography: "oversized bold display type with compact supporting copy",
+    direction: "minimal, emotional, playful, community-first",
+    motifs: [
+      "rounded blocks",
+      "simple geometric shapes",
+      "large dates",
+      "human photography",
+      "Jewish symbols used respectfully",
+    ],
+    rules: [
+      "Use one dominant message per frame",
+      "Keep essential text inside mobile-safe margins",
+      "Maintain high contrast and readable Russian/Hebrew typography",
+      "Do not stretch, recolor, or crowd the ADAMA/CBA logos",
+      "Treat legacy coral/blue assets as references, not the final current palette",
+    ],
   },
   pillars: [
     "aliyah and integration",

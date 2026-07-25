@@ -12,6 +12,7 @@ Read this FIRST.
 - [Repository selection](concepts/repository-selection.md)
 - [ADAMA mock MVP](concepts/adama-mock-mvp.md)
 - [ADAMA content corpus](concepts/adama-content-corpus.md)
+- [Multichannel shadow mode](concepts/multichannel-shadow-mode.md)
 
 ## Sources
 - [ADAMA project brief](sources/adama-project-brief.md)

@@ -50,18 +50,18 @@
     "semantic_hash": ""
   },
   "wiki/index.md": {
-    "mtime": 1784988255.6970584,
-    "ast_hash": "37305d99cd8c58836e30c05fa22fd785",
+    "mtime": 1785003083.2084305,
+    "ast_hash": "949af22dcaeb0a1bea09ee21b3dd2d44",
     "semantic_hash": ""
   },
   "wiki/log.md": {
-    "mtime": 1784988255.6980762,
-    "ast_hash": "ff79ad835dbf98f5ea177dfec6f4f4a1",
+    "mtime": 1785003083.21069,
+    "ast_hash": "87c43d91f3d24d5b856d82e8fdc10c4f",
     "semantic_hash": ""
   },
   "wiki/overview.md": {
-    "mtime": 1784986073.5114748,
-    "ast_hash": "a0c55643492e6fa489ba3f04a8cc28f8",
+    "mtime": 1785003083.2095063,
+    "ast_hash": "3497112cde63a12e37ebdaf53222ce74",
     "semantic_hash": ""
   },
   "wiki/concepts/repository-selection.md": {
@@ -85,8 +85,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1784985958.7775028,
-    "ast_hash": "b8673828e033d33981b0980d098d9fa7",
+    "mtime": 1785003049.1505146,
+    "ast_hash": "7c272801a624728cf54e0b1528ef8095",
     "semantic_hash": ""
   },
   "scripts/demo.mjs": {
@@ -95,28 +95,28 @@
     "semantic_hash": ""
   },
   "src/app.mjs": {
-    "mtime": 1784986547.865332,
-    "ast_hash": "006a70555710ce75dd9b58ca22ac32f8",
+    "mtime": 1785002981.2419345,
+    "ast_hash": "1f24a4cb3de7bd7d84b8999eba5b5397",
     "semantic_hash": ""
   },
   "src/brand/adama-profile.mjs": {
-    "mtime": 1784985912.860362,
-    "ast_hash": "d2ece6efe5cf487a38e275983c0aedfe",
+    "mtime": 1785002932.2013521,
+    "ast_hash": "a15619f97acf351119748cfd3991ea6b",
     "semantic_hash": ""
   },
   "src/domain/content.mjs": {
-    "mtime": 1784985912.8572826,
-    "ast_hash": "8abfb3b6fd9a0744d8a112e98800e695",
+    "mtime": 1785002932.1999173,
+    "ast_hash": "0be5085b5b2ac591cd99d8d3dbfa35a6",
     "semantic_hash": ""
   },
   "src/providers/mock-providers.mjs": {
-    "mtime": 1784986547.8643346,
-    "ast_hash": "785e79903038d2c4a7b20838ca99744a",
+    "mtime": 1785002969.6088574,
+    "ast_hash": "bcbd9ee34189c0e256e842e8fc31c10b",
     "semantic_hash": ""
   },
   "src/server.mjs": {
-    "mtime": 1784986020.989963,
-    "ast_hash": "95e167fa4aeb39824dcb24a06a4d646d",
+    "mtime": 1785003007.4080217,
+    "ast_hash": "05453c84f089740f0865930a5cf83bd4",
     "semantic_hash": ""
   },
   "src/store/memory-store.mjs": {
@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "src/workflow/adama-agent.mjs": {
-    "mtime": 1784986547.8663588,
-    "ast_hash": "11746a615894f9257e03df9280e41ea1",
+    "mtime": 1785002981.2394335,
+    "ast_hash": "d6d6a02462c84929240bf4797f7c3ea3",
     "semantic_hash": ""
   },
   "test/server.test.mjs": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "test/workflow.test.mjs": {
-    "mtime": 1784986547.868832,
-    "ast_hash": "1e9ef6e0babb77225a1c64a4cbd12aab",
+    "mtime": 1785003049.1520023,
+    "ast_hash": "b972148c11252349b17029bb9c00b22f",
     "semantic_hash": ""
   },
   "vendor/langchain-social-media-agent/.eslintrc.cjs": {
@@ -1280,8 +1280,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1784986547.870842,
-    "ast_hash": "fede3d6bdc8caa8ac3bcd0d9c95e8fdb",
+    "mtime": 1785003083.2072816,
+    "ast_hash": "5a476fa41bc204fb0d12708ab9854b53",
     "semantic_hash": ""
   },
   "vendor/langchain-social-media-agent/.github/dependabot.yml": {
@@ -1377,6 +1377,46 @@
   "wiki/sources/local-vault-import-2026-07-25.md": {
     "mtime": 1784988255.695585,
     "ast_hash": "8e04ff1f6d94375272a87c80520bfc13",
+    "semantic_hash": ""
+  },
+  "scripts/generate-batch.mjs": {
+    "mtime": 1785003049.149508,
+    "ast_hash": "aef2eff88aa516250590cdccbac47cc2",
+    "semantic_hash": ""
+  },
+  "src/domain/channels.mjs": {
+    "mtime": 1785002932.1989107,
+    "ast_hash": "2fe0b2dcd70e45682007e11cdf81f9dd",
+    "semantic_hash": ""
+  },
+  "src/store/json-file-store.mjs": {
+    "mtime": 1785002981.2406523,
+    "ast_hash": "4ee4eca8e38c2c6eca362cd0af29339c",
+    "semantic_hash": ""
+  },
+  "test/json-file-store.test.mjs": {
+    "mtime": 1785003049.1530077,
+    "ast_hash": "53d32db2bccf3a274f308dcbe9f589d8",
+    "semantic_hash": ""
+  },
+  "docs/design-audit.md": {
+    "mtime": 1785003049.1542795,
+    "ast_hash": "861b94343f2ce5d1ff659ea9f0e94903",
+    "semantic_hash": ""
+  },
+  "docs/implementation-backlog.md": {
+    "mtime": 1785003049.1530077,
+    "ast_hash": "4b645b2589b160c61009c89e9ab3ffdb",
+    "semantic_hash": ""
+  },
+  "docs/operator-runbook.md": {
+    "mtime": 1785003049.1542795,
+    "ast_hash": "8979b84e4d8fede32d30959ead1d9f62",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/multichannel-shadow-mode.md": {
+    "mtime": 1785003083.2084305,
+    "ast_hash": "b97884da2055549c1d0df05925141ae6",
     "semantic_hash": ""
   }
 }

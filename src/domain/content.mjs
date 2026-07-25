@@ -1,3 +1,5 @@
+import { assertChannels, SOCIAL_CHANNELS } from "./channels.mjs";
+
 export const CONTENT_FORMATS = Object.freeze([
   "reel",
   "carousel",
@@ -63,19 +65,28 @@ export function transition(item, nextState, actor = "agent") {
   };
 }
 
-export function createContentItem({ id, format, topic, objective }) {
+export function createContentItem({
+  id,
+  format,
+  topic,
+  objective,
+  channels = SOCIAL_CHANNELS,
+}) {
   assertFormat(format);
+  assertChannels(channels);
   const now = new Date().toISOString();
   return {
     id,
     format,
     topic,
     objective,
+    channels: [...new Set(channels)],
     state: "idea",
     createdAt: now,
     updatedAt: now,
     research: null,
     draft: null,
+    channelDrafts: null,
     critique: null,
     revisionCount: 0,
     approval: null,

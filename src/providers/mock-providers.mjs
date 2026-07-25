@@ -49,6 +49,7 @@ export class MockContentPlanner {
       objective: index % 2
         ? "Increase saves and community belonging"
         : "Increase qualified event and city-group interest",
+      channels: ["instagram", "facebook", "telegram"],
       status: "planned",
     }));
   }
@@ -71,7 +72,7 @@ export class MockTrendResearcher {
 
 export class MockContentGenerator {
   async draft(item, brand, research) {
-    const hook = `${item.topic}: то, что хотелось бы знать в первый месяц в Израиле`;
+    const hook = `${item.topic}: что хотелось бы знать в первый месяц в Израиле`;
     if (item.format === "carousel") {
       return {
         language: brand.primaryLanguage,
@@ -85,7 +86,7 @@ export class MockContentGenerator {
         ],
         caption: "Без идеальной адаптации — зато вместе и по-настоящему.",
         cta: "Напиши город в комментариях — ADAMA познакомит с ближайшей группой.",
-        designBrief: "Lime background, black oversized type, one emotional photo.",
+        designBrief: "Один крупный тезис на слайд, контрастная типографика, живое фото сообщества и актуальная ADAMA-палитра.",
       };
     }
     return {
@@ -106,8 +107,42 @@ export class MockContentGenerator {
       ],
       caption: "Израиль становится своим не за один день. Но не обязательно проходить это одному.",
       cta: "Отправь новому репатрианту и приходи в ADAMA.",
-      designBrief: "Fast cuts, lime captions, bold black type, warm community footage.",
+      designBrief: "Быстрый монтаж, крупные контрастные титры, тёплые кадры сообщества и актуальная ADAMA-палитра.",
     };
+  }
+
+  async adapt(masterDraft, item) {
+    return Object.fromEntries(item.channels.map((channel) => {
+      const common = {
+        channel,
+        format: item.format,
+        language: masterDraft.language,
+        hook: masterDraft.hook,
+        cta: masterDraft.cta,
+        designBrief: masterDraft.designBrief,
+      };
+      if (channel === "instagram") {
+        return [channel, {
+          ...common,
+          caption: `${masterDraft.caption}\n\n${masterDraft.cta}\n\n#ADAMA #Израиль #НовыеРепатрианты`,
+          assetPlan: item.format === "carousel"
+            ? "4:5 carousel + 9:16 story teaser"
+            : "9:16 primary asset",
+        }];
+      }
+      if (channel === "facebook") {
+        return [channel, {
+          ...common,
+          caption: `${masterDraft.caption}\n\n${masterDraft.cta}\n\nПоделитесь публикацией с теми, кому сейчас особенно нужна своя компания в Израиле.`,
+          assetPlan: "4:5 feed asset; preserve link-preview-safe opening",
+        }];
+      }
+      return [channel, {
+        ...common,
+        caption: `**${masterDraft.hook}**\n\n${masterDraft.caption}\n\n${masterDraft.cta}`,
+        assetPlan: "1:1 or 4:5 media + Telegram-formatted text",
+      }];
+    }));
   }
 }
 
@@ -119,6 +154,9 @@ export class MockCritic {
     }
     if (!item.draft?.hook || item.draft.hook.length < 20) {
       issues.push("Hook is not specific enough");
+    }
+    if (!item.channelDrafts || Object.keys(item.channelDrafts).length !== item.channels.length) {
+      issues.push("Every selected channel requires an adapted draft");
     }
     return {
       brandFit: issues.length ? 0.72 : 0.94,
@@ -132,13 +170,18 @@ export class MockCritic {
 }
 
 export class MockPublisher {
-  async schedule(item, date) {
+  async schedule(item, date, channels = item.channels) {
     if (item.state !== "approved") {
       throw new Error("Publishing queue accepts approved content only");
     }
     return {
       provider: "mock",
       scheduledFor: date,
+      channels: channels.map((channel) => ({
+        channel,
+        status: "shadow_scheduled",
+        externalId: null,
+      })),
       externalCallMade: false,
     };
   }

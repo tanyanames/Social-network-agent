@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-25] update | make ADAMA shadow mode operational across channels
+**Object**: Multichannel content production and local operations.
+**Scenario**: feature
+**Outcome**: ✅ success
+**What happened**: Added Instagram, Facebook, and Telegram content adaptations, per-channel shadow scheduling, persistent local queue storage, a weekly/monthly batch command, API scheduling, a provisional design audit from representative vault assets, and a prioritized production-readiness backlog. Eight tests pass and a four-item weekly batch reaches the approval inbox with zero external calls.
+**Code changes**: this commit — operational multichannel shadow mode.
+**Updated**: `src/`, `scripts/generate-batch.mjs`, `test/`, `docs/implementation-backlog.md`, `docs/design-audit.md`, `docs/operator-runbook.md`, `README.md`, `wiki/`.
+
 ## [2026-07-25] ingest | index local Downloads and work vaults
 **Object**: Local Downloads and desktop work archives.
 **Scenario**: ingest

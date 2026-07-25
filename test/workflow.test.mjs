@@ -35,6 +35,11 @@ test("autonomous pipeline stops at mandatory human approval", async () => {
 
   assert.equal(result.state, "approval_pending");
   assert.equal(result.schedule, null);
+  assert.deepEqual(Object.keys(result.channelDrafts), [
+    "instagram",
+    "facebook",
+    "telegram",
+  ]);
   assert.equal(result.audit.at(-1).to, "approval_pending");
 });
 
@@ -71,6 +76,21 @@ test("human approval unlocks the mock publishing queue", async () => {
   assert.equal(scheduled.state, "scheduled");
   assert.equal(scheduled.schedule.provider, "mock");
   assert.equal(scheduled.schedule.externalCallMade, false);
+  assert.deepEqual(
+    scheduled.schedule.channels.map(({ channel }) => channel),
+    ["instagram", "facebook", "telegram"],
+  );
+});
+
+test("rejects unsupported social channels", () => {
+  const { agent } = createApp();
+  assert.throws(() => agent.createIdea({
+    id: "bad-channel",
+    format: "reel",
+    topic: "community",
+    objective: "test",
+    channels: ["myspace"],
+  }), /Unsupported social channel/);
 });
 
 test("publisher rejects content that was not approved", async () => {

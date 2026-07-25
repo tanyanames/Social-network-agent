@@ -46,6 +46,7 @@ export class AdamaContentAgent {
         ADAMA_BRAND_PROFILE,
         item.research,
       );
+      item.channelDrafts = await this.generator.adapt(item.draft, item);
       item = transition(item, "drafted");
       item.critique = await this.critic.critique(item, ADAMA_BRAND_PROFILE);
       item = transition(item, "critiqued");
@@ -86,7 +87,7 @@ export class AdamaContentAgent {
 
   async schedule(id, date) {
     let item = this.#require(id);
-    const schedule = await this.publisher.schedule(item, date);
+    const schedule = await this.publisher.schedule(item, date, item.channels);
     item.schedule = schedule;
     item = transition(item, "scheduled");
     return this.store.save(item);

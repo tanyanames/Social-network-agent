@@ -1,6 +1,6 @@
 import { createServer } from "node:http";
 import { fileURLToPath } from "node:url";
-import { createApp } from "./app.mjs";
+import { createApp, createOperationalApp } from "./app.mjs";
 
 function send(response, status, data, contentType = "application/json") {
   response.writeHead(status, { "content-type": `${contentType}; charset=utf-8` });
@@ -17,7 +17,7 @@ function page(store) {
   const items = store.list();
   const rows = items.map((item) => `
     <article>
-      <small>${item.format} · ${item.state}</small>
+      <small>${item.format} · ${item.channels.join(", ")} · ${item.state}</small>
       <h2>${item.topic}</h2>
       <p>${item.draft?.hook ?? "Not drafted"}</p>
       ${item.state === "approval_pending" ? `
@@ -55,6 +55,14 @@ export function createApprovalServer(app = createApp()) {
         agent.createIdea(input);
         return send(response, 201, await agent.runToApproval(input.id));
       }
+      if (request.method === "POST" && request.url === "/api/plan") {
+        return send(response, 200, await agent.createContentPlan(await body(request)));
+      }
+      const scheduleMatch = request.url?.match(/^\/api\/items\/([^/]+)\/schedule$/);
+      if (request.method === "POST" && scheduleMatch) {
+        const input = await body(request);
+        return send(response, 200, await agent.schedule(scheduleMatch[1], input.date));
+      }
       const match = request.url?.match(/^\/api\/items\/([^/]+)\/(approve|revise)$/);
       if (request.method === "POST" && match) {
         const [, id, action] = match;
@@ -72,7 +80,7 @@ export function createApprovalServer(app = createApp()) {
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const port = Number(process.env.PORT ?? 3000);
-  const server = createApprovalServer();
+  const server = createApprovalServer(createOperationalApp());
   server.listen(port, () => {
     console.log(`ADAMA approval inbox: http://localhost:${port}`);
   });

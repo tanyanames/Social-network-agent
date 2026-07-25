@@ -1,8 +1,9 @@
 # ADAMA Social Media Agent
 
-Mock-first autonomous content pipeline for ADAMA. The current MVP performs
-account analysis, planning, drafting, critique, revision, and queue preparation.
-Publishing is deliberately unavailable until a human approves each item.
+Mock-first autonomous content pipeline for ADAMA. The current shadow-mode MVP
+performs account analysis, planning, drafting, Instagram/Facebook/Telegram
+adaptation, critique, revision, persistent approval, and queue preparation.
+External publishing remains deliberately disabled.
 
 The MIT-licensed LangChain reference implementation is preserved under
 `vendor/langchain-social-media-agent/`. ADAMA-owned code lives under `src/`.
@@ -17,12 +18,15 @@ The MIT-licensed LangChain reference implementation is preserved under
 ```powershell
 npm test
 npm run demo
+npm run batch -- weekly 2026-07-26
 npm run dev
 ```
 
 Open `http://localhost:3000` for the approval inbox.
 
 The shadow-mode protocol is documented in `docs/shadow-mode.md`.
+Operational steps are in `docs/operator-runbook.md`; the prioritized readiness
+backlog is in `docs/implementation-backlog.md`.
 
 ## Safety invariant
 
