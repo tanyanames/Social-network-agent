@@ -148,5 +148,8 @@
   "146": "verify-reddit-post/tests/e2e.int.test.ts",
   "147": "get-tweet-content.int.test.ts",
   "148": "e2e/e2e.int.test.ts",
-  "149": "validate-images.int.test.ts"
+  "149": "validate-images.int.test.ts",
+  "150": "ADAMA social media agent — project brief",
+  "151": "eslint-config-prettier",
+  "152": "express"
 }
