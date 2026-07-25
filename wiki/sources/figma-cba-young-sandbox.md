@@ -1,7 +1,7 @@
 ---
 type: source
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-07-26
 sources:
   - https://www.figma.com/design/Envd72gDVa15z27IGN5p3w/CBA.young-%E2%80%94-sandbox
 confidence: high
@@ -76,3 +76,24 @@ visual evidence must not silently override the ADAMA brief.
 The file is registered in `config/figma-sources.json` by immutable file key and
 page IDs. A future sync can compare page metadata and selected template nodes,
 but should ingest only approved templates rather than every experimental frame.
+
+## Automation foundations — 2026-07-26
+
+With operator approval, an isolated automation foundation was added without
+changing the legacy collection:
+
+- `ADAMA Primitives`: 8 colour variables;
+- `ADAMA Semantic`: 9 aliased colour roles;
+- `ADAMA Layout`: 13 spacing, radius, and safe-area variables;
+- 5 `ADAMA/Automation/*` text styles;
+- 1 `ADAMA/Automation/Photo Lift` effect style.
+
+All 30 variables have WEB code syntax and none use `ALL_SCOPES`. The semantic
+layer contains the temporary verified CBA values, allowing a future approved
+ADAMA palette to replace primitives without rebuilding components.
+
+The Figma connector accepted variables and styles but rejected the design-mode
+`createPage()` operation atomically with `INVALID_ARGUMENT`. No partial page or
+canvas node was created. The operator must add one blank page named
+`ADAMA — Automation Library v1`; the agent can then resume on that stable page
+and create the five approved component families.

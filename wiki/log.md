@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-26] incident | create Figma automation foundations; page creation blocked
+**Object**: ADAMA automation library in the connected CBA.young Figma file.
+**Scenario**: design-system build
+**Outcome**: ⚠️ partial
+**What happened**: Created three isolated ADAMA variable collections with 30 scoped, WEB-mapped variables, five typography styles, and one photo effect style. Validation passed and the legacy CBA variables were not changed. Phase 2 stopped because the connector rejected even a minimal design-mode `createPage()` call atomically with `INVALID_ARGUMENT`; no partial page or canvas node exists. Resume after the operator creates a blank page named `ADAMA — Automation Library v1`.
+**Code changes**: this commit — persist the resumable Figma foundation state.
+**Updated**: `config/figma-sources.json`, `wiki/sources/figma-cba-young-sandbox.md`, `wiki/log.md`, `graphify-out/`.
+
 ## [2026-07-25] ingest | audit connected CBA.young Figma sandbox
 **Object**: Connected CBA.young design source.
 **Scenario**: design-source ingest

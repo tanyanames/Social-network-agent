@@ -7,8 +7,21 @@
       "url": "https://www.figma.com/design/Envd72gDVa15z27IGN5p3w/CBA.young-%E2%80%94-sandbox",
       "entryNodeId": "2075:1579",
       "role": "cba_visual_reference",
-      "status": "audited",
-      "lastAuditedAt": "2026-07-25",
+      "status": "automation_foundations_created",
+      "lastAuditedAt": "2026-07-26",
+      "automation": {
+        "runId": "adama-automation-v1-2026-07-26",
+        "status": "blocked_pending_blank_page",
+        "collections": {
+          "primitives": "VariableCollectionId:4066:275",
+          "semantic": "VariableCollectionId:4066:276",
+          "layout": "VariableCollectionId:4066:277"
+        },
+        "variableCount": 30,
+        "textStyleCount": 5,
+        "effectStyleCount": 1,
+        "nextStep": "Create one blank Figma page named ADAMA — Automation Library v1, then resume component generation on that page."
+      },
       "pages": [
         {
           "id": "2075:1579",
