@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "name": "CBA.young — sandbox",
+      "fileKey": "Envd72gDVa15z27IGN5p3w",
+      "url": "https://www.figma.com/design/Envd72gDVa15z27IGN5p3w/CBA.young-%E2%80%94-sandbox",
+      "entryNodeId": "2075:1579",
+      "role": "cba_visual_reference",
+      "status": "audited",
+      "lastAuditedAt": "2026-07-25",
+      "pages": [
+        {
+          "id": "2075:1579",
+          "name": "5786",
+          "role": "current_working_page"
+        },
+        {
+          "id": "0:1",
+          "name": "2023-2024 NEW DESIGNS",
+          "role": "recent_archive"
+        },
+        {
+          "id": "2:81",
+          "name": "sandbox OLD",
+          "role": "legacy_archive"
+        }
+      ]
+    }
+  ]
+}

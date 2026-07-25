@@ -5,8 +5,16 @@ export const ADAMA_BRAND_PROFILE = Object.freeze({
   primaryLanguage: "ru",
   tone: ["fresh", "young", "bold", "warm", "community-first"],
   visual: {
-    status: "provisional_pending_full_design_audit",
+    status: "cba_figma_audited_adama_brand_pending",
     targetPalette: ["lime", "green", "black", "white"],
+    observedCurrentCbaPalette: {
+      electricBlue: "#3A39FF",
+      paleCyan: "#ADE6ED",
+      orange: "#FF5B23",
+      lime: "#B0CF00",
+      black: "#000000",
+      white: "#FFFFFF",
+    },
     observedLegacyPalette: {
       coralOrange: "#FF7657",
       skyBlue: "#86BDD2",
@@ -27,7 +35,7 @@ export const ADAMA_BRAND_PROFILE = Object.freeze({
       "Keep essential text inside mobile-safe margins",
       "Maintain high contrast and readable Russian/Hebrew typography",
       "Do not stretch, recolor, or crowd the ADAMA/CBA logos",
-      "Treat legacy coral/blue assets as references, not the final current palette",
+      "Use CBA references for hierarchy and photo treatment, not as ADAMA palette authority",
     ],
   },
   pillars: [

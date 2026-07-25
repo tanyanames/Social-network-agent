@@ -14,3 +14,9 @@ Instagram, Facebook, and Telegram in
 [multichannel shadow mode](concepts/multichannel-shadow-mode.md). Live platform
 calls remain disabled pending credentials, account permissions, brand approval,
 and shadow-mode validation.
+
+The connected [CBA.young Figma sandbox](sources/figma-cba-young-sandbox.md) is
+now a verified visual-reference source. It establishes CBA's real social
+formats, typography, colour range, and photo treatment, but it is an archive
+rather than an automation-ready component library. ADAMA-specific palette and
+logo authority remain pending.

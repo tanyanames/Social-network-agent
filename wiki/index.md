@@ -17,3 +17,4 @@ Read this FIRST.
 ## Sources
 - [ADAMA project brief](sources/adama-project-brief.md)
 - [Local vault import — Downloads and work](sources/local-vault-import-2026-07-25.md)
+- [Figma — CBA.young sandbox](sources/figma-cba-young-sandbox.md)

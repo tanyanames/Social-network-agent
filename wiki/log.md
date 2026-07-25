@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-25] ingest | audit connected CBA.young Figma sandbox
+**Object**: Connected CBA.young design source.
+**Scenario**: design-source ingest
+**Outcome**: ✅ success
+**What happened**: Registered and inspected the three-page Figma file read-only, fully profiled the 5,537-layer current page, inventoried both archive pages, reviewed local styles, and visually checked representative 4:5 and Story designs. Confirmed the social formats, dominant CBA colours, typography, and photo-mask grammar. Also confirmed that the file is a mixed production archive with almost no reusable components, so automatic generation must target a curated template/library layer rather than arbitrary sandbox frames.
+**Code changes**: this commit — Figma source registry and evidence-backed design audit.
+**Updated**: `config/figma-sources.json`, `docs/design-audit.md`, `src/brand/adama-profile.mjs`, `wiki/sources/figma-cba-young-sandbox.md`, `wiki/index.md`, `wiki/overview.md`, `wiki/log.md`, `graphify-out/`.
+
 ## [2026-07-25] update | add editable per-channel approval workspace
 **Object**: ADAMA approval inbox and review state machine.
 **Scenario**: feature
