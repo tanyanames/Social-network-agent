@@ -28,6 +28,32 @@ export class MockAccountAnalyzer {
   }
 }
 
+export class MockContentPlanner {
+  async plan({ cadence = "weekly", startDate }) {
+    const length = cadence === "monthly" ? 12 : 4;
+    const formats = ["reel", "carousel", "story", "event_announcement"];
+    const topics = [
+      "Hebrew and Israeli slang",
+      "new immigrant memes",
+      "Jewish holidays and Shabbat",
+      "community events and city groups",
+    ];
+    const start = new Date(startDate);
+    return Array.from({ length }, (_, index) => ({
+      id: `${cadence}-${index + 1}`,
+      date: new Date(start.getTime() + index * 2 * 86_400_000)
+        .toISOString()
+        .slice(0, 10),
+      format: formats[index % formats.length],
+      topic: topics[index % topics.length],
+      objective: index % 2
+        ? "Increase saves and community belonging"
+        : "Increase qualified event and city-group interest",
+      status: "planned",
+    }));
+  }
+}
+
 export class MockTrendResearcher {
   async research(topic) {
     return {

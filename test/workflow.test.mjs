@@ -3,6 +3,25 @@ import test from "node:test";
 import { createApp } from "../src/app.mjs";
 import { transition, createContentItem } from "../src/domain/content.mjs";
 
+test("creates weekly and monthly fixture plans", async () => {
+  const { agent } = createApp();
+  const weekly = await agent.createContentPlan({
+    cadence: "weekly",
+    startDate: "2026-07-26",
+  });
+  const monthly = await agent.createContentPlan({
+    cadence: "monthly",
+    startDate: "2026-08-01",
+  });
+
+  assert.equal(weekly.length, 4);
+  assert.equal(monthly.length, 12);
+  assert.deepEqual(
+    new Set(weekly.map((item) => item.status)),
+    new Set(["planned"]),
+  );
+});
+
 test("autonomous pipeline stops at mandatory human approval", async () => {
   const { agent } = createApp();
   agent.createIdea({

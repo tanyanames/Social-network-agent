@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "wiki/log.md": {
-    "mtime": 1784986073.512472,
-    "ast_hash": "6121005e325abc5ddd39e8ebdc95d612",
+    "mtime": 1784986570.4106882,
+    "ast_hash": "0cf0e9163603efc9a9705ec1c01d4990",
     "semantic_hash": ""
   },
   "wiki/overview.md": {
@@ -90,13 +90,13 @@
     "semantic_hash": ""
   },
   "scripts/demo.mjs": {
-    "mtime": 1784985912.8766255,
-    "ast_hash": "8695e12f96d16735678cbd72cdb6ae79",
+    "mtime": 1784986547.8677938,
+    "ast_hash": "96444c991572027e530ab5a05dded3f4",
     "semantic_hash": ""
   },
   "src/app.mjs": {
-    "mtime": 1784985912.8701563,
-    "ast_hash": "b034b397d859ac2e8364c7279a9af970",
+    "mtime": 1784986547.865332,
+    "ast_hash": "006a70555710ce75dd9b58ca22ac32f8",
     "semantic_hash": ""
   },
   "src/brand/adama-profile.mjs": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "src/providers/mock-providers.mjs": {
-    "mtime": 1784985958.7799778,
-    "ast_hash": "9e931e1b49a5ca384d74c31febd2e68b",
+    "mtime": 1784986547.8643346,
+    "ast_hash": "785e79903038d2c4a7b20838ca99744a",
     "semantic_hash": ""
   },
   "src/server.mjs": {
@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "src/workflow/adama-agent.mjs": {
-    "mtime": 1784985912.868572,
-    "ast_hash": "d5599e56f58133c3d82b0854a7cee7b6",
+    "mtime": 1784986547.8663588,
+    "ast_hash": "11746a615894f9257e03df9280e41ea1",
     "semantic_hash": ""
   },
   "test/server.test.mjs": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "test/workflow.test.mjs": {
-    "mtime": 1784985912.8791504,
-    "ast_hash": "634fe01f7ff8c2dc9794081f091f1f09",
+    "mtime": 1784986547.868832,
+    "ast_hash": "1e9ef6e0babb77225a1c64a4cbd12aab",
     "semantic_hash": ""
   },
   "vendor/langchain-social-media-agent/.eslintrc.cjs": {
@@ -1280,8 +1280,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1784985912.851287,
-    "ast_hash": "5100e3e376f4ae4b19b2795762d7cfe1",
+    "mtime": 1784986547.870842,
+    "ast_hash": "fede3d6bdc8caa8ac3bcd0d9c95e8fdb",
     "semantic_hash": ""
   },
   "vendor/langchain-social-media-agent/.github/dependabot.yml": {
@@ -1335,8 +1335,8 @@
     "semantic_hash": ""
   },
   "wiki/concepts/adama-mock-mvp.md": {
-    "mtime": 1784986073.5074189,
-    "ast_hash": "40e089d9afe1a9dbc7330f3140b8ec0f",
+    "mtime": 1784986570.4093995,
+    "ast_hash": "0661e36fafdc15a412881c864181f45b",
     "semantic_hash": ""
   },
   "vendor/langchain-social-media-agent/src/tests/data/langchain_logo.png": {
@@ -1357,6 +1357,11 @@
   "vendor/langchain-social-media-agent/static/graph_screenshot.png": {
     "mtime": 1784985079.1677706,
     "ast_hash": "ae35ebeed2eb4c4183beef93813aee8f",
+    "semantic_hash": ""
+  },
+  "docs/shadow-mode.md": {
+    "mtime": 1784986547.8698404,
+    "ast_hash": "69a42110c4f5f94033b3c662d9116a71",
     "semantic_hash": ""
   }
 }

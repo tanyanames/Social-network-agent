@@ -22,6 +22,8 @@ npm run dev
 
 Open `http://localhost:3000` for the approval inbox.
 
+The shadow-mode protocol is documented in `docs/shadow-mode.md`.
+
 ## Safety invariant
 
 `approval_pending` can transition to `approved` only through an explicit human

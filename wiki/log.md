@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-25] update | add content planning and shadow-mode gates
+**Object**: Weekly/monthly planning and non-publishing pilot protocol.
+**Scenario**: feature
+**Outcome**: ✅ success
+**What happened**: Added deterministic weekly and monthly planning to the mock agent and documented the 2–4 week shadow-mode workflow, metrics, and exit criteria. Six project tests now pass. Real Meta and Telegram adapters remain intentionally unconfigured.
+**Code changes**: this commit — planning and shadow-mode runbook.
+**Updated**: `src/providers/mock-providers.mjs`, `src/workflow/adama-agent.mjs`, `scripts/demo.mjs`, `test/workflow.test.mjs`, `docs/shadow-mode.md`, `README.md`, `wiki/concepts/adama-mock-mvp.md`, `wiki/log.md`.
+
 ## [2026-07-25] update | build ADAMA mock approval pipeline
 **Object**: ADAMA-owned content workflow and approval inbox.
 **Scenario**: feature

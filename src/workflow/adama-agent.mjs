@@ -5,9 +5,10 @@ import {
 import { ADAMA_BRAND_PROFILE } from "../brand/adama-profile.mjs";
 
 export class AdamaContentAgent {
-  constructor({ store, analyzer, researcher, generator, critic, publisher }) {
+  constructor({ store, analyzer, planner, researcher, generator, critic, publisher }) {
     this.store = store;
     this.analyzer = analyzer;
+    this.planner = planner;
     this.researcher = researcher;
     this.generator = generator;
     this.critic = critic;
@@ -16,6 +17,13 @@ export class AdamaContentAgent {
 
   async analyzeAccount(posts) {
     return this.analyzer.analyze(posts);
+  }
+
+  async createContentPlan({ cadence, startDate }) {
+    if (!["weekly", "monthly"].includes(cadence)) {
+      throw new Error("Cadence must be weekly or monthly");
+    }
+    return this.planner.plan({ cadence, startDate });
   }
 
   createIdea(input) {

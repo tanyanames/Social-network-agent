@@ -1,6 +1,7 @@
 import { MemoryStore } from "./store/memory-store.mjs";
 import {
   MockAccountAnalyzer,
+  MockContentPlanner,
   MockContentGenerator,
   MockCritic,
   MockPublisher,
@@ -13,6 +14,7 @@ export function createApp() {
   const agent = new AdamaContentAgent({
     store,
     analyzer: new MockAccountAnalyzer(),
+    planner: new MockContentPlanner(),
     researcher: new MockTrendResearcher(),
     generator: new MockContentGenerator(),
     critic: new MockCritic(),

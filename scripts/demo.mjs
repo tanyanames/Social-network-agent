@@ -9,6 +9,12 @@ const posts = JSON.parse(
 console.log("Account analysis");
 console.log(await agent.analyzeAccount(posts));
 
+console.log("\nWeekly content plan");
+console.log(await agent.createContentPlan({
+  cadence: "weekly",
+  startDate: "2026-07-26",
+}));
+
 agent.createIdea({
   id: "demo-reel",
   format: "reel",

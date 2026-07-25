@@ -23,6 +23,8 @@ approved → scheduled`
 
 The agent can analyze account fixtures, research fixture trends, generate Reel
 and carousel drafts, critique brand fit, revise, and prepare an approval inbox.
+It also produces deterministic weekly (4-item) and monthly (12-item) content
+plans for shadow-mode evaluation.
 
 ## Safety invariant
 
@@ -32,13 +34,14 @@ accepts only approved items, and the current provider always reports
 
 ## Verification
 
-Five tests pass:
+Six tests pass:
 
 1. HTTP approval inbox end-to-end.
-2. Autonomous execution stops at approval.
-3. Self-approval is rejected.
-4. Human approval unlocks the mock queue.
-5. Unapproved publishing is rejected.
+2. Weekly/monthly plan generation.
+3. Autonomous execution stops at approval.
+4. Self-approval is rejected.
+5. Human approval unlocks the mock queue.
+6. Unapproved publishing is rejected.
 
 The upstream snapshot separately produced 68 passing unit tests and two
 toolchain/ESM failures under the available Windows dependency setup. Those
