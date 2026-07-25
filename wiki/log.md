@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-25] update | build ADAMA mock approval pipeline
+**Object**: ADAMA-owned content workflow and approval inbox.
+**Scenario**: feature
+**Outcome**: ✅ success
+**What happened**: Imported the MIT-licensed LangChain social-media-agent as an attributed vendor snapshot, then built a dependency-free mock vertical slice for account analysis, trend fixtures, Reel/carousel drafting, critique, revision, mandatory human approval, and queue preparation. The safety gate is enforced in both the state transition and publisher boundary. Five ADAMA tests pass; no external API or publishing call is made.
+**Code changes**: this commit — mock MVP and approval workflow.
+**Updated**: `vendor/langchain-social-media-agent/`, `src/`, `test/`, `fixtures/`, `scripts/`, `package.json`, `README.md`, `wiki/concepts/adama-mock-mvp.md`, `wiki/index.md`, `wiki/overview.md`, `wiki/log.md`.
+
 ## [2026-07-25] ingest | ADAMA project brief and repository research
 **Object**: ADAMA project scope and four open-source social-agent candidates.
 **Scenario**: ingest

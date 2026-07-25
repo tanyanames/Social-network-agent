@@ -1,0 +1,17 @@
+[
+  {
+    "id": "post-1",
+    "format": "reel",
+    "themes": ["aliyah and integration", "community events"]
+  },
+  {
+    "id": "post-2",
+    "format": "carousel",
+    "themes": ["Hebrew and Israeli slang"]
+  },
+  {
+    "id": "post-3",
+    "format": "reel",
+    "themes": ["new immigrant memes", "community events"]
+  }
+]

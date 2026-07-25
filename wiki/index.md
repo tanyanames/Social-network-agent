@@ -10,6 +10,7 @@ Read this FIRST.
 
 ## Concepts
 - [Repository selection](concepts/repository-selection.md)
+- [ADAMA mock MVP](concepts/adama-mock-mvp.md)
 
 ## Sources
 - [ADAMA project brief](sources/adama-project-brief.md)
