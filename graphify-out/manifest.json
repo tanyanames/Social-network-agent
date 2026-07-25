@@ -19,36 +19,6 @@
     "ast_hash": "94ae0b9388a2fdaa47997f6925e101b0",
     "semantic_hash": ""
   },
-  "agent-env-setup-handover/assets/config/codex-hooks.json": {
-    "mtime": 1784983736.0,
-    "ast_hash": "8caa64db93f00d604cfe27a7be2d48bd",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/config/settings.json": {
-    "mtime": 1784983736.0,
-    "ast_hash": "669200644a5aaa8a4bf798c907612a0d",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/obsidian/app.json": {
-    "mtime": 1784983736.0,
-    "ast_hash": "3edb77d176833b2b988b3fe555310a8d",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/obsidian/core-plugins.json": {
-    "mtime": 1784983736.0,
-    "ast_hash": "dcfbbb3b065a77da209df3f1e7abdcad",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/obsidian/graph.json": {
-    "mtime": 1784983736.0,
-    "ast_hash": "94ae0b9388a2fdaa47997f6925e101b0",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/bootstrap.sh": {
-    "mtime": 1784983736.0,
-    "ast_hash": "ce575c7f7a93b2e86235a1c3b20a3b1c",
-    "semantic_hash": ""
-  },
   ".agents/skills/ship/SKILL.md": {
     "mtime": 1784984186.309445,
     "ast_hash": "d8417d1b578c660a49214d52541f323e",
@@ -69,111 +39,6 @@
     "ast_hash": "bfed14f93e5b99b3a5322bb78f87bc1c",
     "semantic_hash": ""
   },
-  "agent-env-setup-handover/HANDOVER.md": {
-    "mtime": 1784983778.0,
-    "ast_hash": "7b43c51646684f00355dfca675c7bd1e",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/SKILL.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "571dbbe3c1a5a29ad6d476b98deb5970",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/config/gitignore-block.txt": {
-    "mtime": 1784983736.0,
-    "ast_hash": "ace2c3ec37c6d8340db1f6b90f3001f0",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/config/ship.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "d8417d1b578c660a49214d52541f323e",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/framework/universal-agent-framework.claude.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "9ba434ced7b18785d3b5cd5268fff728",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/framework/universal-agent-framework.codex.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "6e125e27c192b8be91244aa79859a1d8",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/guardrails.seed.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "7f1a6a87cf03a913f072b510d481b379",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-changelog.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "984adcca88ae90ba210d17581312b414",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-de-sloppify.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "52febc010035df032fe5141c949ad73a",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-debug.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "69499a453e3c6b8561d0ecdb8a2bd83e",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-docs-sync.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "da22f260d17f8e8ebc530a60e8db6191",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-e2e.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "023f49e0f36ea8a3466ce2be41169e01",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-guardrails.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "16d68ecf5ea5929c5f5d49c3e811b9de",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-investigate.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "e39097720d2a39c572d743df1e51ccbf",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-lint.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "08902d9cc83735c6868213f84a0a0e1c",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-migrate.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "6d55e0d3ead7a945d79426325c2d547f",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-pr-babysitter.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "312ef976eafdd353ea9f684ae17aa6fc",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-pr-review.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "99cc93c9e4338bf416b944893e2664dc",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-spec-ship.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "7f4e02868fca8bdd70f0951ef9735e06",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/loop-visual-regression.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "f5928f89b5141799e77d29e47368a0cc",
-    "semantic_hash": ""
-  },
-  "agent-env-setup-handover/assets/loops/reflexion.seed.md": {
-    "mtime": 1784983736.0,
-    "ast_hash": "e512bb1330d39a91e93488fae29a4b8e",
-    "semantic_hash": ""
-  },
   "docs/universal-agent-framework.claude.md": {
     "mtime": 1784984185.920596,
     "ast_hash": "9ba434ced7b18785d3b5cd5268fff728",
@@ -190,8 +55,8 @@
     "semantic_hash": ""
   },
   "wiki/log.md": {
-    "mtime": 1784984674.3940763,
-    "ast_hash": "31890468d32d56f187b2ad59b2cbe739",
+    "mtime": 1784985029.2443924,
+    "ast_hash": "dd8a025006feb3ba48f49f0bdd3f26ec",
     "semantic_hash": ""
   },
   "wiki/overview.md": {
