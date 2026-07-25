@@ -2,10 +2,10 @@
 
 ## Readiness verdict
 
-The agent is ready for daily **shadow-mode content production**, not unattended
-live publishing. It can plan, draft, adapt, critique, persist, approve, and
-prepare mock schedules for Instagram, Facebook, and Telegram. Every item stops
-for human approval and makes zero external calls.
+The agent is ready for daily **shadow-mode content production** for two isolated
+accounts, not unattended live publishing. It can plan, draft, adapt, critique,
+persist, approve, and prepare mock schedules for Instagram, Facebook, and
+Telegram. Every item stops for human approval and makes zero external calls.
 
 ## P0 — usable now
 
@@ -21,15 +21,17 @@ for human approval and makes zero external calls.
   and Telegram decisions.
 - [x] Human revision feedback can regenerate into a new approval cycle.
 - [x] Shadow scheduler with a per-channel status.
+- [x] Separate ADAMA and CBA Young brand profiles, state files, approval
+  inboxes, account routes, and queue identities.
 
 ## P1 — required before live publishing
 
 - [ ] Replace fixture research with cited live trend research.
 - [ ] Connect an LLM provider with structured-output validation and cost limits.
-- [ ] Complete a representative design audit in Figma/Canva and approve the
-  current brand kit, fonts, logos, templates, and palette.
-- [ ] Connect a Meta Business app, Instagram professional account, Facebook Page,
-  permissions, webhook verification, and token rotation.
+- [ ] Approve separate ADAMA and CBA Young brand kits, fonts, logos, templates,
+  palettes, and Figma/Canva sources. Never derive one from the other.
+- [ ] Connect each community's Meta assets independently: Instagram professional
+  account, Facebook Page, permissions, webhooks, and token rotation.
 - [ ] Connect a Telegram bot and target channel with least-privilege rights.
 - [ ] Store credentials outside Git and add startup configuration diagnostics.
 - [ ] Implement idempotency, retry policy, rate limits, asset upload, publication

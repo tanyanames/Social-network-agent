@@ -1,0 +1,47 @@
+export const CBA_YOUNG_BRAND_PROFILE = Object.freeze({
+  id: "cba-young",
+  organization: "CBA Young",
+  audience: "Young Russian-speaking Jewish adults and community members in Israel",
+  languages: ["ru", "he", "en"],
+  primaryLanguage: "ru",
+  tone: ["young", "bold", "warm", "Jewish", "community-first"],
+  visual: {
+    status: "verified_from_cba_figma",
+    sourceFileKey: "Envd72gDVa15z27IGN5p3w",
+    palette: {
+      electricBlue: "#3A39FF",
+      paleCyan: "#ADE6ED",
+      orange: "#FF5B23",
+      lime: "#B0CF00",
+      black: "#000000",
+      white: "#FFFFFF",
+    },
+    typography: [
+      "Roboto Condensed Medium",
+      "Roboto Black",
+      "Roboto Medium",
+      "Montserrat Bold",
+    ],
+    direction: "oversized typography, geometric photo masks, energetic community photography",
+    rules: [
+      "Use one dominant message per frame",
+      "Keep essential text inside mobile-safe margins",
+      "Use the CBA Young logo and CBA palette only for the CBA Young account",
+      "Do not use ADAMA templates, logos, or palette in CBA Young content",
+    ],
+  },
+  pillars: [
+    "Jewish community life",
+    "Shabbat and Jewish holidays",
+    "city groups and events",
+    "trips and Shabbatons",
+    "Jewish learning and identity",
+    "community celebrations",
+  ],
+  reviewRules: [
+    "Do not invent religious quotations or historical claims",
+    "Use absolute dates for events and holidays",
+    "Keep the CTA concrete and community-oriented",
+    "Publishing always requires human approval",
+  ],
+});

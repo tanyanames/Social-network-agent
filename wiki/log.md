@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-26] update | isolate ADAMA and CBA Young accounts and brands
+**Object**: Multi-account content workflow and brand boundary.
+**Scenario**: architecture correction
+**Outcome**: ⚠️ partial
+**What happened**: Operator clarified that ADAMA and CBA Young are two separate communities and social accounts. Added distinct brand profiles, account-bound content records, independent stores and approval inboxes, account-scoped API routes, separate batch commands, and account identity in shadow schedules. Thirteen tests and browser verification confirm that identical local IDs, drafts, queues, and UI actions stay isolated. The CBA Figma source is now classified as CBA-only. Removal of the previously created ADAMA-named Figma variables/styles is still pending because the connector stopped accepting all requests to that file; exact targets are recorded for a surgical rollback.
+**Code changes**: this commit — enforce two-tenant brand and account isolation.
+**Updated**: `src/`, `scripts/generate-batch.mjs`, `test/`, `README.md`, `docs/`, `config/figma-sources.json`, `wiki/`, `graphify-out/`.
+
 ## [2026-07-26] incident | create Figma automation foundations; page creation blocked
 **Object**: ADAMA automation library in the connected CBA.young Figma file.
 **Scenario**: design-system build

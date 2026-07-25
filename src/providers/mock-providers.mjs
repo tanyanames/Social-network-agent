@@ -81,12 +81,12 @@ export class MockContentGenerator {
           hook,
           "Узнаваемая ситуация из жизни нового репатрианта",
           `Практический шаг: ${research.signals[0]}`,
-          "Как с этим помогает комьюнити ADAMA",
+          `Как с этим помогает комьюнити ${brand.organization}`,
           "Сохрани и отправь тому, кому это сейчас нужно",
         ],
         caption: "Без идеальной адаптации — зато вместе и по-настоящему.",
-        cta: "Напиши город в комментариях — ADAMA познакомит с ближайшей группой.",
-        designBrief: "Один крупный тезис на слайд, контрастная типографика, живое фото сообщества и актуальная ADAMA-палитра.",
+        cta: `Напиши город в комментариях — ${brand.organization} познакомит с ближайшей группой.`,
+        designBrief: `Один крупный тезис на слайд, контрастная типографика, живое фото сообщества и отдельная палитра ${brand.organization}.`,
       };
     }
     return {
@@ -101,13 +101,13 @@ export class MockContentGenerator {
         },
         {
           seconds: "10-15",
-          visual: "Люди ADAMA вместе",
+          visual: `Люди ${brand.organization} вместе`,
           voiceover: "Адаптация легче, когда рядом свои.",
         },
       ],
       caption: "Израиль становится своим не за один день. Но не обязательно проходить это одному.",
-      cta: "Отправь новому репатрианту и приходи в ADAMA.",
-      designBrief: "Быстрый монтаж, крупные контрастные титры, тёплые кадры сообщества и актуальная ADAMA-палитра.",
+      cta: `Отправь другу и приходи в ${brand.organization}.`,
+      designBrief: `Быстрый монтаж, крупные контрастные титры, тёплые кадры сообщества и отдельная палитра ${brand.organization}.`,
     };
   }
 
@@ -124,7 +124,7 @@ export class MockContentGenerator {
       if (channel === "instagram") {
         return [channel, {
           ...common,
-          caption: `${masterDraft.caption}\n\n${masterDraft.cta}\n\n#ADAMA #Израиль #НовыеРепатрианты`,
+          caption: `${masterDraft.caption}\n\n${masterDraft.cta}\n\n#${brandTag(item)} #Израиль #Сообщество`,
           assetPlan: item.format === "carousel"
             ? "4:5 carousel + 9:16 story teaser"
             : "9:16 primary asset",
@@ -149,8 +149,8 @@ export class MockContentGenerator {
 export class MockCritic {
   async critique(item, brand) {
     const issues = [];
-    if (!item.draft?.cta?.toLowerCase().includes("adama")) {
-      issues.push("CTA must connect the action to ADAMA");
+    if (!item.draft?.cta?.toLowerCase().includes(brand.organization.toLowerCase())) {
+      issues.push(`CTA must connect the action to ${brand.organization}`);
     }
     if (!item.draft?.hook || item.draft.hook.length < 20) {
       issues.push("Hook is not specific enough");
@@ -170,12 +170,13 @@ export class MockCritic {
 }
 
 export class MockPublisher {
-  async schedule(item, date, channels = item.channels) {
+  async schedule(item, date, channels = item.channels, account) {
     if (item.state !== "approved") {
       throw new Error("Publishing queue accepts approved content only");
     }
     return {
       provider: "mock",
+      accountId: account.id,
       scheduledFor: date,
       channels: channels.map((channel) => ({
         channel,
@@ -185,4 +186,8 @@ export class MockPublisher {
       externalCallMade: false,
     };
   }
+}
+
+function brandTag(item) {
+  return item.brandId === "cba-young" ? "CBAYoung" : "ADAMA";
 }

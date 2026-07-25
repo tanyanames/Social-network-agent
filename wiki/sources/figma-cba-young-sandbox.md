@@ -9,7 +9,7 @@ status: active
 verified_by: Figma connector read-only audit
 staleness_window: 30 days
 relates_to:
-  - "[[ADAMA]]"
+  - "[[CBA Young]]"
   - "[[Multichannel shadow mode]]"
 tags:
   - figma
@@ -21,7 +21,8 @@ tags:
 
 ## Scope
 
-The connected Figma file was inspected read-only on 2026-07-25. It contains
+The connected Figma file is a CBA Young source only. It was inspected read-only
+on 2026-07-25 and contains
 three pages:
 
 - `5786` (`2075:1579`) — current working page, 190 top-level objects;
@@ -65,11 +66,10 @@ treatment, and CBA tone. Do not treat it as an automation-ready design system:
 frame naming is inconsistent, reusable components are almost absent, and the
 archive mixes current work with explicitly old colours and legacy layouts.
 
-Before automatic design generation, create a curated template page or separate
-library with approved tokens, named slots, safe areas, and components for Reel
+Before CBA Young automatic design generation, create a curated template page or separate
+library with approved CBA tokens, named slots, safe areas, and components for Reel
 cover, 4:5 post/carousel, Story, event announcement, and photo report. ADAMA's
-final logo and palette still require an explicit ADAMA source of truth; CBA
-visual evidence must not silently override the ADAMA brief.
+ADAMA must use a separate Figma/Canva source and library.
 
 ## Automation relationship
 
@@ -77,10 +77,10 @@ The file is registered in `config/figma-sources.json` by immutable file key and
 page IDs. A future sync can compare page metadata and selected template nodes,
 but should ingest only approved templates rather than every experimental frame.
 
-## Automation foundations — 2026-07-26
+## Incorrect cross-brand foundations — rollback pending
 
-With operator approval, an isolated automation foundation was added without
-changing the legacy collection:
+Before the two-account relationship was clarified, an ADAMA-named automation
+foundation was added without changing the legacy collection:
 
 - `ADAMA Primitives`: 8 colour variables;
 - `ADAMA Semantic`: 9 aliased colour roles;
@@ -92,8 +92,8 @@ All 30 variables have WEB code syntax and none use `ALL_SCOPES`. The semantic
 layer contains the temporary verified CBA values, allowing a future approved
 ADAMA palette to replace primitives without rebuilding components.
 
-The Figma connector accepted variables and styles but rejected the design-mode
-`createPage()` operation atomically with `INVALID_ARGUMENT`. No partial page or
-canvas node was created. The operator must add one blank page named
-`ADAMA — Automation Library v1`; the agent can then resume on that stable page
-and create the five approved component families.
+These foundations must not remain in the CBA file. The connector subsequently
+stopped accepting even read-only requests to the file, so verified removal is
+pending. Exact collection and style IDs are retained in
+`config/figma-sources.json` for targeted deletion when access returns. No ADAMA
+page, component, or canvas node was created.

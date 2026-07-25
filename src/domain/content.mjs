@@ -67,6 +67,8 @@ export function transition(item, nextState, actor = "agent") {
 
 export function createContentItem({
   id,
+  accountId,
+  brandId,
   format,
   topic,
   objective,
@@ -77,6 +79,8 @@ export function createContentItem({
   const now = new Date().toISOString();
   return {
     id,
+    accountId,
+    brandId,
     format,
     topic,
     objective,

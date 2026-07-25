@@ -1,14 +1,13 @@
-# ADAMA / CBA design audit
+# Separate ADAMA and CBA Young design audit
 
 ## Evidence reviewed
 
-The audit combines local ADAMA/CBA logo exports and representative event and
-Shabbat graphics from the immutable vault with a read-only inspection of the
-connected Figma file `CBA.young — sandbox`. The Figma audit covered its three
-pages, the complete 5,537-layer current page, top-level inventories of both
-archive pages, local styles, and representative 4:5 and Story renders.
+The audit records two independent brand systems. The connected Figma file
+`CBA.young — sandbox` is a CBA Young source only. Local ADAMA exports remain
+ADAMA evidence only. Shared themes or audiences do not authorize shared logos,
+palettes, templates, or design tokens.
 
-The CBA findings are verified. ADAMA-specific palette and logo rules remain
+The CBA Young findings are verified. ADAMA-specific palette and logo rules remain
 provisional until an explicit ADAMA brand source is supplied.
 
 ## Observed system
@@ -30,10 +29,8 @@ provisional until an explicit ADAMA brand source is supplied.
 
 ## Risks
 
-- The operator brief specifies a green/lime ADAMA palette, while the connected
-  CBA file is a multicolour archive dominated by blue/cyan/orange. This is a
-  brand relationship to resolve, not evidence that ADAMA should inherit CBA
-  colours.
+- The connected CBA file is a multicolour archive dominated by blue/cyan/orange.
+  Those colours must never be used as ADAMA authority.
 - The current Figma page has no components, and the legacy page has only one
   component and one component set. Inconsistent frame naming and mixed archive
   eras make direct template automation fragile.
@@ -45,8 +42,8 @@ provisional until an explicit ADAMA brand source is supplied.
 
 Use one message per frame, oversized high-contrast type, generous mobile-safe
 margins, restrained geometry, warm community photography, and respectful Jewish
-symbols. Use the CBA file for hierarchy, formats, photo treatment, and tone.
-Do not infer ADAMA's final palette from this CBA sandbox.
+symbols. Apply CBA findings only to CBA Young. Do not infer ADAMA typography,
+palette, logo treatment, or templates from the CBA sandbox.
 
 ## Required preparation for automated design
 

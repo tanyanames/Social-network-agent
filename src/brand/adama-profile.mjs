@@ -1,20 +1,13 @@
 export const ADAMA_BRAND_PROFILE = Object.freeze({
+  id: "adama",
   organization: "ADAMA",
   audience: "Young Russian-speaking new immigrants in Israel",
   languages: ["ru", "he", "en"],
   primaryLanguage: "ru",
   tone: ["fresh", "young", "bold", "warm", "community-first"],
   visual: {
-    status: "cba_figma_audited_adama_brand_pending",
+    status: "adama_brand_source_pending",
     targetPalette: ["lime", "green", "black", "white"],
-    observedCurrentCbaPalette: {
-      electricBlue: "#3A39FF",
-      paleCyan: "#ADE6ED",
-      orange: "#FF5B23",
-      lime: "#B0CF00",
-      black: "#000000",
-      white: "#FFFFFF",
-    },
     observedLegacyPalette: {
       coralOrange: "#FF7657",
       skyBlue: "#86BDD2",
@@ -34,8 +27,8 @@ export const ADAMA_BRAND_PROFILE = Object.freeze({
       "Use one dominant message per frame",
       "Keep essential text inside mobile-safe margins",
       "Maintain high contrast and readable Russian/Hebrew typography",
-      "Do not stretch, recolor, or crowd the ADAMA/CBA logos",
-      "Use CBA references for hierarchy and photo treatment, not as ADAMA palette authority",
+      "Do not stretch, recolor, or crowd the ADAMA logo",
+      "Do not use CBA Young templates, logos, or palette in ADAMA content",
     ],
   },
   pillars: [

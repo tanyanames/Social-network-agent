@@ -6,21 +6,30 @@
       "fileKey": "Envd72gDVa15z27IGN5p3w",
       "url": "https://www.figma.com/design/Envd72gDVa15z27IGN5p3w/CBA.young-%E2%80%94-sandbox",
       "entryNodeId": "2075:1579",
-      "role": "cba_visual_reference",
-      "status": "automation_foundations_created",
+      "role": "cba_brand_source",
+      "brandId": "cba-young",
+      "status": "cba_only_rollback_pending",
       "lastAuditedAt": "2026-07-26",
       "automation": {
         "runId": "adama-automation-v1-2026-07-26",
-        "status": "blocked_pending_blank_page",
+        "status": "rollback_required",
         "collections": {
           "primitives": "VariableCollectionId:4066:275",
           "semantic": "VariableCollectionId:4066:276",
           "layout": "VariableCollectionId:4066:277"
         },
+        "styles": {
+          "displayXl": "S:e6dacaab151f203e55978bbeaf180e3be6cb7257,",
+          "displayL": "S:acab8b1096de7039afc6ea15e5b7e3ca737a5483,",
+          "heading": "S:225ec00aee338244fe1a8323e1c7947381ce0e7a,",
+          "body": "S:67cb130f8df1c7b59d76f209f07ede417ca88f43,",
+          "meta": "S:2c28eac9d7f050f6c9463dd8a36fa057a5116884,",
+          "photoLift": "S:02d79a23c5073e2e82cca03a0ab786ae73498cf4,"
+        },
         "variableCount": 30,
         "textStyleCount": 5,
         "effectStyleCount": 1,
-        "nextStep": "Create one blank Figma page named ADAMA — Automation Library v1, then resume component generation on that page."
+        "nextStep": "Remove these ADAMA-named collections and styles from the CBA file when the Figma connector is available again. Build ADAMA templates only in a separate ADAMA file."
       },
       "pages": [
         {

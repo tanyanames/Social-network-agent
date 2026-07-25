@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createApp } from "../src/app.mjs";
+import { createApp, createMultiAccountApp } from "../src/app.mjs";
 import { transition, createContentItem } from "../src/domain/content.mjs";
 
 test("creates weekly and monthly fixture plans", async () => {
@@ -174,5 +174,40 @@ test("publisher rejects content that was not approved", async () => {
   await assert.rejects(
     () => agent.schedule("story-1", "2026-07-27T17:00:00+03:00"),
     /approved content only/,
+  );
+});
+
+test("ADAMA and CBA Young keep brand context and queues isolated", async () => {
+  const { accounts } = createMultiAccountApp();
+  const adama = accounts.adama;
+  const cba = accounts["cba-young"];
+  const idea = {
+    id: "same-local-id",
+    format: "carousel",
+    topic: "community events",
+    objective: "Invite people",
+  };
+
+  adama.agent.createIdea(idea);
+  cba.agent.createIdea(idea);
+  const adamaDraft = await adama.agent.runToApproval(idea.id);
+  const cbaDraft = await cba.agent.runToApproval(idea.id);
+
+  assert.equal(adamaDraft.accountId, "adama");
+  assert.equal(adamaDraft.brandId, "adama");
+  assert.equal(cbaDraft.accountId, "cba-young");
+  assert.equal(cbaDraft.brandId, "cba-young");
+  assert.match(adamaDraft.draft.cta, /ADAMA/);
+  assert.doesNotMatch(adamaDraft.draft.cta, /CBA Young/);
+  assert.match(cbaDraft.draft.cta, /CBA Young/);
+  assert.doesNotMatch(cbaDraft.draft.cta, /ADAMA/);
+  assert.equal(adama.agent.approvalInbox().length, 1);
+  assert.equal(cba.agent.approvalInbox().length, 1);
+  assert.equal(adama.store.list().length, 1);
+  assert.equal(cba.store.list().length, 1);
+
+  assert.throws(
+    () => adama.agent.createIdea({ ...idea, id: "wrong-account", accountId: "cba-young" }),
+    /cannot create content/,
   );
 });

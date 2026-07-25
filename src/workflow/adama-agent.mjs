@@ -2,10 +2,21 @@ import {
   createContentItem,
   transition,
 } from "../domain/content.mjs";
-import { ADAMA_BRAND_PROFILE } from "../brand/adama-profile.mjs";
+import { getSocialAccount } from "../brand/accounts.mjs";
 
-export class AdamaContentAgent {
-  constructor({ store, analyzer, planner, researcher, generator, critic, publisher }) {
+export class SocialContentAgent {
+  constructor({
+    account,
+    store,
+    analyzer,
+    planner,
+    researcher,
+    generator,
+    critic,
+    publisher,
+  }) {
+    this.account = account;
+    this.brandProfile = account.brand;
     this.store = store;
     this.analyzer = analyzer;
     this.planner = planner;
@@ -23,11 +34,23 @@ export class AdamaContentAgent {
     if (!["weekly", "monthly"].includes(cadence)) {
       throw new Error("Cadence must be weekly or monthly");
     }
-    return this.planner.plan({ cadence, startDate });
+    const plan = await this.planner.plan({ cadence, startDate });
+    return plan.map((item) => ({
+      ...item,
+      accountId: this.account.id,
+      brandId: this.brandProfile.id,
+    }));
   }
 
   createIdea(input) {
-    const item = createContentItem(input);
+    if (input.accountId && input.accountId !== this.account.id) {
+      throw new Error(`Agent for ${this.account.id} cannot create content for ${input.accountId}`);
+    }
+    const item = createContentItem({
+      ...input,
+      accountId: this.account.id,
+      brandId: this.brandProfile.id,
+    });
     return this.store.save(item);
   }
 
@@ -45,12 +68,12 @@ export class AdamaContentAgent {
     for (let attempt = 0; attempt < 2; attempt += 1) {
       item.draft = await this.generator.draft(
         item,
-        ADAMA_BRAND_PROFILE,
+        this.brandProfile,
         item.research,
       );
       item.channelDrafts = await this.generator.adapt(item.draft, item);
       item = transition(item, "drafted");
-      item.critique = await this.critic.critique(item, ADAMA_BRAND_PROFILE);
+      item.critique = await this.critic.critique(item, this.brandProfile);
       item = transition(item, "critiqued");
 
       if (item.critique.verdict === "approve_for_human_review") {
@@ -185,19 +208,43 @@ export class AdamaContentAgent {
 
   async schedule(id, date) {
     let item = this.#require(id);
-    const schedule = await this.publisher.schedule(item, date, item.channels);
+    const schedule = await this.publisher.schedule(
+      item,
+      date,
+      item.channels,
+      this.account,
+    );
     item.schedule = schedule;
     item = transition(item, "scheduled");
     return this.store.save(item);
   }
 
   approvalInbox() {
-    return this.store.list().filter((item) => item.state === "approval_pending");
+    return this.store.list().filter(
+      (item) => (item.accountId ?? "adama") === this.account.id
+        && item.state === "approval_pending",
+    );
   }
 
   #require(id) {
     const item = this.store.get(id);
     if (!item) throw new Error(`Unknown content item: ${id}`);
+    const storedAccountId = item.accountId ?? "adama";
+    if (storedAccountId !== this.account.id) {
+      throw new Error(`Content item belongs to another account: ${storedAccountId}`);
+    }
     return item;
+  }
+}
+
+export class AdamaContentAgent extends SocialContentAgent {
+  constructor(options) {
+    super({ ...options, account: getSocialAccount("adama") });
+  }
+}
+
+export class CbaYoungContentAgent extends SocialContentAgent {
+  constructor(options) {
+    super({ ...options, account: getSocialAccount("cba-young") });
   }
 }

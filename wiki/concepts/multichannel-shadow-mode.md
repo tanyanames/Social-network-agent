@@ -7,8 +7,8 @@ status: active
 
 # Multichannel shadow mode
 
-ADAMA now has an operational local content loop for Instagram, Facebook, and
-Telegram:
+ADAMA and CBA Young each have an isolated local content loop for Instagram,
+Facebook, and Telegram:
 
 `plan → master draft → channel adaptations → critique → human approval →
 shadow schedule`
@@ -26,10 +26,9 @@ and always declares `externalCallMade: false`. Live Meta and Telegram adapters
 remain blocked by account permissions, credentials, production authorization,
 and the 2–4 week shadow-mode exit criteria.
 
-The provisional design profile comes from an initial visual review of local
-ADAMA/CBA assets. It records the archive's coral/blue legacy system while keeping
-the operator's green/lime target palette separate. Current Figma/Canva sources
-must resolve that conflict before automated templates become authoritative.
+Each account uses its own brand profile and state file. The CBA Young Figma
+source is not an ADAMA design source. Current Figma/Canva sources must be
+approved independently before automated templates become authoritative.
 
 See [the implementation backlog](../../docs/implementation-backlog.md),
 [design audit](../../docs/design-audit.md), and

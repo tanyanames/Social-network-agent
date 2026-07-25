@@ -1,8 +1,8 @@
 # Social Network Agent — Overview
 
-This project is an autonomous social-media management agent for
-[ADAMA](entities/adama.md), a Jewish youth community serving young
-Russian-speaking new immigrants in Israel.
+This project is an autonomous social-media management engine for two separate
+communities and social accounts: [ADAMA](entities/adama.md) and
+[CBA Young](entities/cba-young.md).
 
 The selected engineering base is `langchain-ai/social-media-agent`, preserved
 as an attributed vendor snapshot. An ADAMA-owned [mock MVP](concepts/adama-mock-mvp.md)
@@ -11,12 +11,12 @@ mandatory human approval, and a non-publishing queue.
 
 The current operational layer creates persistent channel adaptations for
 Instagram, Facebook, and Telegram in
-[multichannel shadow mode](concepts/multichannel-shadow-mode.md). Live platform
-calls remain disabled pending credentials, account permissions, brand approval,
-and shadow-mode validation.
+[multichannel shadow mode](concepts/multichannel-shadow-mode.md). The two
+tenants have enforced [brand and account isolation](concepts/multi-account-brand-isolation.md).
+Live platform calls remain disabled pending separate credentials, account
+permissions, brand approvals, and shadow-mode validation.
 
-The connected [CBA.young Figma sandbox](sources/figma-cba-young-sandbox.md) is
-now a verified visual-reference source. It establishes CBA's real social
-formats, typography, colour range, and photo treatment, but it is an archive
-rather than an automation-ready component library. ADAMA-specific palette and
-logo authority remain pending.
+The connected [CBA.young Figma sandbox](sources/figma-cba-young-sandbox.md)
+belongs exclusively to CBA Young. It establishes CBA's formats, typography,
+colour range, and photo treatment, but is not an ADAMA source. ADAMA-specific
+palette, logo, and template authority remain pending.

@@ -1,8 +1,18 @@
 import { createOperationalApp } from "../src/app.mjs";
 
-const cadence = process.argv[2] ?? "weekly";
-const startDate = process.argv[3] ?? new Date().toISOString().slice(0, 10);
-const { agent } = createOperationalApp();
+const accountIds = new Set(["adama", "cba-young"]);
+const first = process.argv[2];
+const accountId = accountIds.has(first) ? first : "adama";
+const cadence = accountIds.has(first) ? (process.argv[3] ?? "weekly") : (first ?? "weekly");
+const startDate = accountIds.has(first)
+  ? (process.argv[4] ?? new Date().toISOString().slice(0, 10))
+  : (process.argv[3] ?? new Date().toISOString().slice(0, 10));
+const { agent } = createOperationalApp({
+  accountId,
+  statePath: accountId === "adama"
+    ? (process.env.ADAMA_STATE_PATH ?? "Context/runtime-state/items.json")
+    : (process.env.CBA_YOUNG_STATE_PATH ?? "Context/runtime-state/cba-young-items.json"),
+});
 const plan = await agent.createContentPlan({ cadence, startDate });
 const created = [];
 
@@ -18,6 +28,7 @@ for (const entry of plan) {
 
 console.log(JSON.stringify({
   mode: "shadow",
+  accountId,
   cadence,
   startDate,
   generated: created.length,
