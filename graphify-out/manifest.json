@@ -50,13 +50,13 @@
     "semantic_hash": ""
   },
   "wiki/index.md": {
-    "mtime": 1784986073.50948,
-    "ast_hash": "26879f55da137255c08c44c43c97ea5a",
+    "mtime": 1784988255.6970584,
+    "ast_hash": "37305d99cd8c58836e30c05fa22fd785",
     "semantic_hash": ""
   },
   "wiki/log.md": {
-    "mtime": 1784986570.4106882,
-    "ast_hash": "0cf0e9163603efc9a9705ec1c01d4990",
+    "mtime": 1784988255.6980762,
+    "ast_hash": "ff79ad835dbf98f5ea177dfec6f4f4a1",
     "semantic_hash": ""
   },
   "wiki/overview.md": {
@@ -1362,6 +1362,21 @@
   "docs/shadow-mode.md": {
     "mtime": 1784986547.8698404,
     "ast_hash": "69a42110c4f5f94033b3c662d9116a71",
+    "semantic_hash": ""
+  },
+  "scripts/index-local-vault.py": {
+    "mtime": 1784987717.182199,
+    "ast_hash": "a9af45f51ee9bc50bf7cbc2be6477506",
+    "semantic_hash": ""
+  },
+  "wiki/concepts/adama-content-corpus.md": {
+    "mtime": 1784988255.695585,
+    "ast_hash": "65d876305f9d8d0badc9c38fc34e889d",
+    "semantic_hash": ""
+  },
+  "wiki/sources/local-vault-import-2026-07-25.md": {
+    "mtime": 1784988255.695585,
+    "ast_hash": "8e04ff1f6d94375272a87c80520bfc13",
     "semantic_hash": ""
   }
 }

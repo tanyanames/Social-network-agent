@@ -7,6 +7,14 @@ Tip: `grep "^## \[" log.md | head -20` shows recent activity.
 
 ---
 
+## [2026-07-25] ingest | index local Downloads and work vaults
+**Object**: Local Downloads and desktop work archives.
+**Scenario**: ingest
+**Outcome**: ✅ success
+**What happened**: Copied 4,710 supported files (15.27 GiB) into a gitignored immutable vault, created a complete metadata index, extracted 3,023,260 characters from 530 readable documents, synthesized seven ADAMA-relevant thematic clusters, and added the corpus relationships to the project wiki. No vector database was present, so Graphify remains the durable graph layer. Raw files, filenames, and extracted private text remain local and untracked.
+**Code changes**: this commit — reproducible local vault indexer, knowledge synthesis, and graph update.
+**Updated**: `.gitignore`, `scripts/index-local-vault.py`, `wiki/sources/local-vault-import-2026-07-25.md`, `wiki/concepts/adama-content-corpus.md`, `wiki/index.md`, `wiki/log.md`, `graphify-out/`.
+
 ## [2026-07-25] update | add content planning and shadow-mode gates
 **Object**: Weekly/monthly planning and non-publishing pilot protocol.
 **Scenario**: feature
